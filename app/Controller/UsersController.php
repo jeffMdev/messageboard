@@ -22,7 +22,11 @@ class UsersController extends AppController {
 	    }
 	}
 
-	public function register() {
+	public function logout() {
 		return $this->redirect($this->Auth->logout());
+	}
+
+	public function register() {
+		
 	}
 }

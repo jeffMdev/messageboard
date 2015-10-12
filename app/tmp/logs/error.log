@@ -178,3 +178,13 @@ Request URL: /register
 Stack Trace:
 #0 /var/www/messageboard/app/webroot/index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-10-12 18:11:38 Error: Fatal Error (1): Call to undefined method View::link() in [/var/www/messageboard/app/View/Users/login.ctp, line 8]
+2015-10-12 18:11:38 Error: [FatalErrorException] Call to undefined method View::link()
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/messag...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/messag...', 8, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/messag...', 8, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
