@@ -14,11 +14,11 @@ class UsersController extends AppController {
 	}
 
 	public function login() {
-		if ($this->request->is('post')) {
+		if ($this->request->is(array('post'))) {
 	        if ($this->Auth->login()) {
 	            return $this->redirect($this->Auth->redirectUrl());
 	        }
-	        $this->Flash->error(__('Invalid email or password, please try again.'));
+	        $this->Flash->error('Invalid email or password, please try again.');
 	    }
 	}
 
@@ -27,6 +27,6 @@ class UsersController extends AppController {
 	}
 
 	public function register() {
-		
+
 	}
 }
