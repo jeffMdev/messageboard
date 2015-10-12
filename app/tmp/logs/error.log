@@ -1,0 +1,180 @@
+2015-10-12 16:31:01 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /var/www/messageboard/app/Config/bootstrap.php(113): CakePlugin::load('DebugKit')
+#1 /var/www/messageboard/lib/Cake/Core/Configure.php(92): include('/var/www/messag...')
+#2 /var/www/messageboard/lib/Cake/bootstrap.php(431): Configure::bootstrap(true)
+#3 /var/www/messageboard/app/webroot/index.php(97): include('/var/www/messag...')
+#4 {main}
+2015-10-12 16:31:31 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /var/www/messageboard/app/Config/bootstrap.php(113): CakePlugin::load('DebugKit')
+#1 /var/www/messageboard/lib/Cake/Core/Configure.php(92): include('/var/www/messag...')
+#2 /var/www/messageboard/lib/Cake/bootstrap.php(431): Configure::bootstrap(true)
+#3 /var/www/messageboard/app/webroot/index.php(97): include('/var/www/messag...')
+#4 {main}
+2015-10-12 16:31:33 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /var/www/messageboard/app/Config/bootstrap.php(113): CakePlugin::load('DebugKit')
+#1 /var/www/messageboard/lib/Cake/Core/Configure.php(92): include('/var/www/messag...')
+#2 /var/www/messageboard/lib/Cake/bootstrap.php(431): Configure::bootstrap(true)
+#3 /var/www/messageboard/app/webroot/index.php(97): include('/var/www/messag...')
+#4 {main}
+2015-10-12 16:33:09 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /var/www/messageboard/app/Config/bootstrap.php(113): CakePlugin::load('DebugKit')
+#1 /var/www/messageboard/lib/Cake/Core/Configure.php(92): include('/var/www/messag...')
+#2 /var/www/messageboard/lib/Cake/bootstrap.php(431): Configure::bootstrap(true)
+#3 /var/www/messageboard/app/webroot/index.php(97): include('/var/www/messag...')
+#4 {main}
+2015-10-12 16:41:55 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-12 16:42:09 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-12 16:44:28 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /login
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-12 16:44:39 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /login
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-12 16:48:51 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/messageboard/app/View/Users/login.ctp, line 2]
+2015-10-12 16:48:51 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 2, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 2, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-12 16:49:00 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/messageboard/app/View/Users/login.ctp, line 2]
+2015-10-12 16:49:00 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 2, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 2, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-12 16:51:34 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/messageboard/app/View/Users/login.ctp, line 2]
+2015-10-12 16:51:34 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 2, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 2, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-12 16:51:49 Error: Fatal Error (1): Call to a member function create() on a non-object in [/var/www/messageboard/app/View/Users/login.ctp, line 2]
+2015-10-12 16:51:49 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 2, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 2, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-12 16:52:02 Error: Fatal Error (1): Call to a member function input() on a non-object in [/var/www/messageboard/app/View/Users/login.ctp, line 3]
+2015-10-12 16:52:02 Error: [FatalErrorException] Call to a member function input() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 3, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 3, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-12 16:56:58 Error: Fatal Error (1): Call to undefined method UsersController::request() in [/var/www/messageboard/app/Controller/UsersController.php, line 14]
+2015-10-12 16:56:58 Error: [FatalErrorException] Call to undefined method UsersController::request()
+Request URL: /
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/messag...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/messag...', 14, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/messag...', 14, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-12 16:59:11 Error: Fatal Error (1): Call to a member function user() on a non-object in [/var/www/messageboard/app/Controller/UsersController.php, line 14]
+2015-10-12 16:59:11 Error: [FatalErrorException] Call to a member function user() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 14, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 14, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-12 17:39:29 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /users/login
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/messageboard/app/webroot/index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-12 17:39:33 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/messageboard/app/webroot/index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-12 17:45:16 Error: [MissingControllerException] Controller class RegisterController could not be found.
+Exception Attributes: array (
+  'class' => 'RegisterController',
+  'plugin' => NULL,
+)
+Request URL: /register
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
