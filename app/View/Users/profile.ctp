@@ -16,7 +16,7 @@
  		<?php else : ?>
  			Name
  		<?php endif; ?>
- 		(<?php echo $this->Html->link('Edit', array('controller' => 'users', 'action' => 'editprofile'), null, $user['User']['id']); ?>)
+ 		(<?php echo $this->Html->link('Edit', array('controller' => 'users', 'action' => 'editprofile', $user['User']['id'])); ?>)
  		</h3>
  	</li>	
 	<li>Gender : <?php echo $user['User']['gender']; ?></li>	
