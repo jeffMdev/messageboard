@@ -66,7 +66,7 @@ class UsersController extends AppController {
     }
 
     public function profile($id = null) {
-    	$this->set('user', $this->User->read(null, $id));
+    	$this->set('user', $this->User->findById($id));
     }
 
     public function editProfile($id = null) {

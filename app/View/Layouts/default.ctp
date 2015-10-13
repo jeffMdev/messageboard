@@ -47,7 +47,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
                <?php 
                     if($this->Session->check('Auth.User')){
                         echo 'Welcome ' . $this->Session->read('Auth.User.name');
-                        echo ' | ' . $this->Html->link('Profile', array('controller' => 'users', 'action' => 'profile'), null, $this->Session->read('Auth.User.id'));
+                        echo ' | ' . $this->Html->link('Profile', array('action' => 'profile', $this->Session->read('Auth.User.id')));
                         echo ' | ' . $this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout'));
                     }
                 ?>

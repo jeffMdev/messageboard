@@ -1246,3 +1246,125 @@ Stack Trace:
 #3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-10-13 19:05:54 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-13 19:05:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/js/jquery.min.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-13 19:05:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-13 19:06:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-13 19:06:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/js/jquery.min.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-13 19:06:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-13 19:06:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/js/jquery.min.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-13 19:12:29 Error: Fatal Error (1): Cannot unset string offsets in [/var/www/messageboard/lib/Cake/View/Helper/HtmlHelper.php, line 346]
+2015-10-13 19:12:29 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /messageboard/users/profile
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/var/www/messag...', 346)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/var/www/messag...', 346, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/var/www/messag...', 346, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-13 19:12:53 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /messageboard/users/profile
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/messageboard/lib/Cake/View/View.php(837): HelperCollection->__isset('Auth')
+#2 /var/www/messageboard/app/View/Layouts/default.ctp(50): View->__get('Auth')
+#3 /var/www/messageboard/lib/Cake/View/View.php(948): include('/var/www/messag...')
+#4 /var/www/messageboard/lib/Cake/View/View.php(910): View->_evaluate('/var/www/messag...', Array)
+#5 /var/www/messageboard/lib/Cake/View/View.php(542): View->_render('/var/www/messag...')
+#6 /var/www/messageboard/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#7 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#8 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#9 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-10-13 19:13:14 Error: Fatal Error (1): Cannot unset string offsets in [/var/www/messageboard/lib/Cake/View/Helper/HtmlHelper.php, line 346]
+2015-10-13 19:13:14 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /messageboard/users/profile
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/var/www/messag...', 346)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/var/www/messag...', 346, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/var/www/messag...', 346, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-13 19:13:18 Error: Fatal Error (1): Cannot unset string offsets in [/var/www/messageboard/lib/Cake/View/Helper/HtmlHelper.php, line 346]
+2015-10-13 19:13:18 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /messageboard/users/profile/16
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/var/www/messag...', 346)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/var/www/messag...', 346, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/var/www/messag...', 346, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-13 19:13:18 Error: Fatal Error (1): Cannot unset string offsets in [/var/www/messageboard/lib/Cake/View/Helper/HtmlHelper.php, line 346]
+2015-10-13 19:13:18 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /messageboard/users/profile/16
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/var/www/messag...', 346)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/var/www/messag...', 346, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/var/www/messag...', 346, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
