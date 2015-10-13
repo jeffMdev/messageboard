@@ -176,7 +176,7 @@ class ModelTask extends BakeTask {
 				$prompt = __d('cake_console', 'Make a selection from the choices above');
 			}
 			$choice = $this->in($prompt, null, $default);
-			if ((int)$choice > 0 && (int)$choice <= $max) {
+			if (intval($choice) > 0 && intval($choice) <= $max) {
 				$valid = true;
 			}
 		}
@@ -383,8 +383,6 @@ class ModelTask extends BakeTask {
 		if (class_exists('Validation')) {
 			$options = get_class_methods('Validation');
 		}
-		$deprecatedOptions = array('notEmpty', 'between', 'ssn');
-		$options = array_diff($options, $deprecatedOptions);
 		sort($options);
 		$default = 1;
 		foreach ($options as $option) {
@@ -445,9 +443,9 @@ class ModelTask extends BakeTask {
 				} elseif ($metaData['type'] === 'string' && $metaData['length'] == 36) {
 					$guess = $methods['uuid'];
 				} elseif ($metaData['type'] === 'string') {
-					$guess = $methods['notBlank'];
+					$guess = $methods['notEmpty'];
 				} elseif ($metaData['type'] === 'text') {
-					$guess = $methods['notBlank'];
+					$guess = $methods['notEmpty'];
 				} elseif ($metaData['type'] === 'integer') {
 					$guess = $methods['numeric'];
 				} elseif ($metaData['type'] === 'float') {
@@ -462,8 +460,6 @@ class ModelTask extends BakeTask {
 					$guess = $methods['datetime'];
 				} elseif ($metaData['type'] === 'inet') {
 					$guess = $methods['ip'];
-				} elseif ($metaData['type'] === 'decimal') {
-					$guess = $methods['decimal'];
 				}
 			}
 
@@ -732,7 +728,7 @@ class ModelTask extends BakeTask {
 		while (strtolower($wannaDoMoreAssoc) === 'y') {
 			$assocs = array('belongsTo', 'hasOne', 'hasMany', 'hasAndBelongsToMany');
 			$this->out(__d('cake_console', 'What is the association type?'));
-			$assocType = (int)$this->inOptions($assocs, __d('cake_console', 'Enter a number'));
+			$assocType = intval($this->inOptions($assocs, __d('cake_console', 'Enter a number')));
 
 			$this->out(__d('cake_console', "For the following options be very careful to match your setup exactly.\n" .
 				"Any spelling mistakes will cause errors."));
@@ -769,7 +765,7 @@ class ModelTask extends BakeTask {
 			if (!empty($showKeys)) {
 				$this->out(__d('cake_console', 'A helpful List of possible keys'));
 				$foreignKey = $this->inOptions($showKeys, __d('cake_console', 'What is the foreignKey?'));
-				$foreignKey = $showKeys[(int)$foreignKey];
+				$foreignKey = $showKeys[intval($foreignKey)];
 			}
 			if (!isset($foreignKey)) {
 				$foreignKey = $this->in(__d('cake_console', 'What is the foreignKey? Specify your own.'), null, $suggestedForeignKey);
@@ -930,7 +926,7 @@ class ModelTask extends BakeTask {
 				$tableIsGood = $this->in(__d('cake_console', 'Do you want to use this table?'), array('y', 'n'), 'y');
 			}
 			if (strtolower($tableIsGood) === 'n') {
-				$useTable = $this->in(__d('cake_console', 'What is the name of the table (without prefix)?'));
+				$useTable = $this->in(__d('cake_console', 'What is the name of the table?'));
 			}
 		}
 		return $useTable;
@@ -989,14 +985,14 @@ class ModelTask extends BakeTask {
 				return $this->_stop();
 			}
 
-			if (!$enteredModel || (int)$enteredModel > count($this->_modelNames)) {
+			if (!$enteredModel || intval($enteredModel) > count($this->_modelNames)) {
 				$this->err(__d('cake_console', "The model name you supplied was empty,\n" .
 					"or the number you selected was not an option. Please try again."));
 				$enteredModel = '';
 			}
 		}
-		if ((int)$enteredModel > 0 && (int)$enteredModel <= count($this->_modelNames)) {
-			return $this->_modelNames[(int)$enteredModel - 1];
+		if (intval($enteredModel) > 0 && intval($enteredModel) <= count($this->_modelNames)) {
+			return $this->_modelNames[intval($enteredModel) - 1];
 		}
 
 		return $enteredModel;

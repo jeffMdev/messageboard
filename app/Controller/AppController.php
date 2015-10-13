@@ -5,6 +5,8 @@
  * This file is application-wide controller file. You can put all
  * application-wide controller-related methods here.
  *
+ * PHP 5
+ *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -18,7 +20,6 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
 App::uses('Controller', 'Controller');
 
 /**
@@ -32,28 +33,34 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+	// added the debug toolkit
+	// sessions support
+	// authorization for login and logut redirect
 	public $components = array(
-        'Flash',
+		'DebugKit.Toolbar',
+		'Session',
         'Auth' => array(
-            'loginRedirect' => array(
-                'controller' => 'users',
-                'action' => 'index'
-            ),
-            'logoutRedirect' => array(
-                'controller' => 'users',
-                'action' => 'login',
-                'home'
-            ),
-            'authenticate' => array(
-                'Form' => array(
-                    'passwordHasher' => 'Blowfish'
-                )
-            )
-        )
-    );
+            'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
+			'authError' => 'You must be logged in to view this page.',
+			'loginError' => 'Invalid Email or Password entered, please try again.',
+			'authenticate' => array(
+            'Form' => array(
+	                'fields' => array('username' => 'email')
+	            )
+	        )
+ 
+        ));
 
-    public function beforeFilter() {
-        $this->Auth->allow('register');
+	
+	
+	// only allow the login controllers only
+	public function beforeFilter() {
+        $this->Auth->allow('login');
     }
-
+	
+	public function isAuthorized($user) {
+		return true;
+	}
+	
 }

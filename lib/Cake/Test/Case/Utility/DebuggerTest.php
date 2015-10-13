@@ -187,7 +187,7 @@ class DebuggerTest extends CakeTestCase {
 			'error' => array(),
 			'code' => array(), '8', '/code',
 			'file' => array(), 'preg:/[^<]+/', '/file',
-			'line' => array(), '' . ((int)__LINE__ - 7), '/line',
+			'line' => array(), '' . (intval(__LINE__) - 7), '/line',
 			'preg:/Undefined variable:\s+foo/',
 			'/error'
 		);
@@ -246,7 +246,7 @@ class DebuggerTest extends CakeTestCase {
 			'<error',
 			'<code', '8', '/code',
 			'<file', 'preg:/[^<]+/', '/file',
-			'<line', '' . ((int)__LINE__ - 7), '/line',
+			'<line', '' . (intval(__LINE__) - 7), '/line',
 			'preg:/Undefined variable:\s+foo/',
 			'/error'
 		);
@@ -516,8 +516,8 @@ TEXT;
 		Debugger::dump($var);
 		$result = ob_get_clean();
 
-		$open = PHP_SAPI === 'cli' ? "\n" : '<pre>';
-		$close = PHP_SAPI === 'cli' ? "\n" : '</pre>';
+		$open = php_sapi_name() === 'cli' ? "\n" : '<pre>';
+		$close = php_sapi_name() === 'cli' ? "\n" : '</pre>';
 		$expected = <<<TEXT
 {$open}array(
 	'People' => array(
@@ -540,8 +540,8 @@ TEXT;
 		Debugger::dump($var, 1);
 		$result = ob_get_clean();
 
-		$open = PHP_SAPI === 'cli' ? "\n" : '<pre>';
-		$close = PHP_SAPI === 'cli' ? "\n" : '</pre>';
+		$open = php_sapi_name() === 'cli' ? "\n" : '<pre>';
+		$close = php_sapi_name() === 'cli' ? "\n" : '</pre>';
 		$expected = <<<TEXT
 {$open}array(
 	'People' => array(

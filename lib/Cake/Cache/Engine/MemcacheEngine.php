@@ -22,7 +22,7 @@
  * more information.
  *
  * @package Cake.Cache.Engine
- * @deprecated 3.0.0 You should use the Memcached adapter instead.
+ * @deprecated You should use the Memcached adapter instead.
  */
 class MemcacheEngine extends CacheEngine {
 
@@ -104,7 +104,7 @@ class MemcacheEngine extends CacheEngine {
  * @return array Array containing host, port
  */
 	protected function _parseServerString($server) {
-		if (strpos($server, 'unix://') === 0) {
+		if ($server[0] === 'u') {
 			return array($server, 0);
 		}
 		if (substr($server, 0, 1) === '[') {

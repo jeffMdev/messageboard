@@ -32,6 +32,7 @@ App::uses('Xml', 'Utility');
  *
  * @package       Cake.Controller.Component
  * @link http://book.cakephp.org/2.0/en/core-libraries/components/request-handling.html
+ *
  */
 class RequestHandlerComponent extends Component {
 
@@ -161,7 +162,7 @@ class RequestHandlerComponent extends Component {
 		$accepts = $this->response->mapType($accept);
 		$preferedTypes = current($accepts);
 		if (array_intersect($preferedTypes, array('html', 'xhtml'))) {
-			return;
+			return null;
 		}
 
 		$extensions = Router::extensions();
@@ -228,7 +229,7 @@ class RequestHandlerComponent extends Component {
  */
 	public function convertXml($xml) {
 		try {
-			$xml = Xml::build($xml, array('readFile' => false));
+			$xml = Xml::build($xml);
 			if (isset($xml->data)) {
 				return Xml::toArray($xml->data);
 			}
@@ -279,7 +280,7 @@ class RequestHandlerComponent extends Component {
  * "304 Not Modified" header.
  *
  * @param Controller $controller Controller instance.
- * @return bool False if the render process should be aborted.
+ * @return bool false if the render process should be aborted
  */
 	public function beforeRender(Controller $controller) {
 		if ($this->settings['checkHttpCache'] && $this->response->checkNotModified($this->request)) {
@@ -291,7 +292,7 @@ class RequestHandlerComponent extends Component {
  * Returns true if the current HTTP request is Ajax, false otherwise
  *
  * @return bool True if call is Ajax
- * @deprecated 3.0.0 Use `$this->request->is('ajax')` instead.
+ * @deprecated use `$this->request->is('ajax')` instead.
  */
 	public function isAjax() {
 		return $this->request->is('ajax');
@@ -301,7 +302,7 @@ class RequestHandlerComponent extends Component {
  * Returns true if the current HTTP request is coming from a Flash-based client
  *
  * @return bool True if call is from Flash
- * @deprecated 3.0.0 Use `$this->request->is('flash')` instead.
+ * @deprecated use `$this->request->is('flash')` instead.
  */
 	public function isFlash() {
 		return $this->request->is('flash');
@@ -311,7 +312,7 @@ class RequestHandlerComponent extends Component {
  * Returns true if the current request is over HTTPS, false otherwise.
  *
  * @return bool True if call is over HTTPS
- * @deprecated 3.0.0 Use `$this->request->is('ssl')` instead.
+ * @deprecated use `$this->request->is('ssl')` instead.
  */
 	public function isSSL() {
 		return $this->request->is('ssl');
@@ -367,7 +368,7 @@ class RequestHandlerComponent extends Component {
  * Returns true if the current call a POST request
  *
  * @return bool True if call is a POST
- * @deprecated 3.0.0 Use $this->request->is('post'); from your controller.
+ * @deprecated Use $this->request->is('post'); from your controller.
  */
 	public function isPost() {
 		return $this->request->is('post');
@@ -377,7 +378,7 @@ class RequestHandlerComponent extends Component {
  * Returns true if the current call a PUT request
  *
  * @return bool True if call is a PUT
- * @deprecated 3.0.0 Use $this->request->is('put'); from your controller.
+ * @deprecated Use $this->request->is('put'); from your controller.
  */
 	public function isPut() {
 		return $this->request->is('put');
@@ -387,7 +388,7 @@ class RequestHandlerComponent extends Component {
  * Returns true if the current call a GET request
  *
  * @return bool True if call is a GET
- * @deprecated 3.0.0 Use $this->request->is('get'); from your controller.
+ * @deprecated Use $this->request->is('get'); from your controller.
  */
 	public function isGet() {
 		return $this->request->is('get');
@@ -397,7 +398,7 @@ class RequestHandlerComponent extends Component {
  * Returns true if the current call a DELETE request
  *
  * @return bool True if call is a DELETE
- * @deprecated 3.0.0 Use $this->request->is('delete'); from your controller.
+ * @deprecated Use $this->request->is('delete'); from your controller.
  */
 	public function isDelete() {
 		return $this->request->is('delete');
@@ -424,7 +425,7 @@ class RequestHandlerComponent extends Component {
  * @param string|array $type The Content-type or array of Content-types assigned to the name,
  *    i.e. "text/html", or "application/xml"
  * @return void
- * @deprecated 3.0.0 Use `$this->response->type()` instead.
+ * @deprecated use `$this->response->type()` instead.
  */
 	public function setContent($name, $type = null) {
 		$this->response->type(array($name => $type));
@@ -434,7 +435,7 @@ class RequestHandlerComponent extends Component {
  * Gets the server name from which this request was referred
  *
  * @return string Server address
- * @deprecated 3.0.0 Use $this->request->referer() from your controller instead
+ * @deprecated use $this->request->referer() from your controller instead
  */
 	public function getReferer() {
 		return $this->request->referer(false);
@@ -446,7 +447,7 @@ class RequestHandlerComponent extends Component {
  * @param bool $safe Use safe = false when you think the user might manipulate
  *   their HTTP_CLIENT_IP header. Setting $safe = false will also look at HTTP_X_FORWARDED_FOR
  * @return string Client IP address
- * @deprecated 3.0.0 Use $this->request->clientIp() from your, controller instead.
+ * @deprecated use $this->request->clientIp() from your, controller instead.
  */
 	public function getClientIP($safe = true) {
 		return $this->request->clientIp($safe);
@@ -713,7 +714,7 @@ class RequestHandlerComponent extends Component {
  *
  * @param string|array $cType Either a string content type to map, or an array of types.
  * @return string|array Aliases for the types provided.
- * @deprecated 3.0.0 Use $this->response->mapType() in your controller instead.
+ * @deprecated Use $this->response->mapType() in your controller instead.
  */
 	public function mapType($cType) {
 		return $this->response->mapType($cType);
@@ -723,7 +724,7 @@ class RequestHandlerComponent extends Component {
  * Maps a content type alias back to its mime-type(s)
  *
  * @param string|array $alias String alias to convert back into a content type. Or an array of aliases to map.
- * @return string|null Null on an undefined alias. String value of the mapped alias type. If an
+ * @return string Null on an undefined alias. String value of the mapped alias type. If an
  *   alias maps to more than one content type, the first one will be returned.
  */
 	public function mapAlias($alias) {

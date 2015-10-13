@@ -1,5 +1,8 @@
 <?php
 /**
+ *
+ * PHP 5
+ *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -15,7 +18,6 @@
  */
 
 $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,36 +30,64 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('bootstrap.min.css');
+		echo $this->Html->css('bootstrap-theme.css');
+		echo $this->Html->css('sb-admin-2.css');
+		echo $this->Html->css('metisMenu.min.css');
 
 		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
+	<div id="wrapper">
 
-			<?php echo $this->Flash->render(); ?>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+               <?php 
+                    if($this->Session->check('Auth.User')){
+                        echo 'Welcome ' . $this->Session->read('Auth.User.name');
+                        echo ' | ' . $this->Html->link('Profile', array('controller' => 'users', 'action' => 'profile'), null, $this->Session->read('Auth.User.id'));
+                        echo ' | ' . $this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout'));
+                    }
+                ?>
+            </div>
+            <!-- /.navbar-header -->
 
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
+            <div class="navbar-default sidebar" role="navigation">
+                
+                <div class="hiddensidebar-nav navbar-collapse">
+                    
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            
+            <!-- /.row -->
+            <div class="row">
+                <?php echo $this->Session->flash(); ?>
+            </div>
+            <!-- /.row -->
+            
+            <!-- /.row -->
+                <?php echo $this->fetch('content'); ?>
+            <!-- /.row -->
+
+            
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+		
+	<?php echo $this->Html->script(array(
+		'jquery.min.js',
+		'bootstrap.min.js',
+		'sb-admin-2.js',
+		'metisMenu.min.js'
+	)); ?>
+
 </body>
 </html>
