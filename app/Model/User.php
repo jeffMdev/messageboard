@@ -3,9 +3,9 @@ App::uses('AuthComponent', 'Controller/Component');
 App::uses('AppModel', 'Model');
 
 class User extends AppModel {
-	
-	public $avatarUploadDir = 'img/avatars';
-    
+	    
+	public $uploadDir = 'uploads';
+
 	public $validate = array(
         'name' => array(
             'nonEmpty' => array(
@@ -71,7 +71,21 @@ class User extends AppModel {
 				'message' => 'Both passwords must match.',
 				'required' => false,
 			)
-        )		
+        )
+  //       'image' => array(
+		// 	'uploadError' => array(
+		// 		'rule' => 'uploadError',
+		// 		'message' => 'Something went wrong with the file upload',
+		// 		'required' => FALSE,
+		// 		'allowEmpty' => TRUE,
+		// 	),
+		// 	'mimeType' => array(
+		// 		'rule' => array('mimeType', array('image/gif','image/png','image/jpg','image/jpeg')),
+		// 		'message' => 'Invalid file, only images allowed',
+		// 		'required' => FALSE,
+		// 		'allowEmpty' => TRUE,
+		// 	)
+		// )
     );
 
 	function isUniqueEmail($check) {
@@ -133,7 +147,21 @@ class User extends AppModel {
 		if (isset($this->data[$this->alias]['password_update'])) {
 			$this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password_update']);
 		}
+
+		if (!empty($this->data[$this->alias]['filepath'])) {
+			$this->data[$this->alias]['filename'] = $this->data[$this->alias]['filepath'];
+		}
+
 		return parent::beforeSave($options);
+	}
+
+	public function beforeValidate($options = array()) {
+		// ignore empty file - causes issues with form validation when file is empty and optional
+		if (!empty($this->data[$this->alias]['filename']['error']) && $this->data[$this->alias]['filename']['error']==4 && $this->data[$this->alias]['filename']['size']==0) {
+			unset($this->data[$this->alias]['filename']);
+		}
+
+		parent::beforeValidate($options);
 	}
 
 }

@@ -11,7 +11,7 @@
 				$imgSrc = '/app/webroot/img/profile_img/' . $this->request->data['User']['image'];
 			}
 			echo $this->Html->image($imgSrc, array('id' => 'pic', 'name' => 'pic', 'width' => '160', 'height' => '160', 'class' => 'img-thumbnail')); 
-			echo $this->Form->file('File/image', array('id' => 'imgInp', 'class' => 'form-control input-sm'));
+			echo $this->Form->file('image', array('id' => 'imgInp', 'class' => 'form-control input-sm'));
 		?>
 	</div>
 	<div class="col-lg-4">
