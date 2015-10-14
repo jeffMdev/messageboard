@@ -5,11 +5,13 @@
 </div>
 <div class="row">
 	<div class="col-lg-2">
-		<?php if (!empty($user['User']['image'])) : ?>
-		<?php echo $this->Html->image('/app/webroot/img/profile_img/' . $user['User']['image'], array('id' => 'pic', 'name' => 'pic', 'width' => '160', 'height' => '160', 'class' => 'img-thumbnail')); ?>		
-		<?php else : ?>
-		<?php echo $this->Html->image('/app/webroot/img/pic_00.jpg', array('id' => 'pic', 'name' => 'pic', 'width' => '160', 'height' => '160')); ?>		
-		<?php endif; ?>
+		<?php 
+			$imgSrc = '/app/webroot/img/pic_00.jpg';
+			if (!empty($user['User']['image'])) {
+				$imgSrc = '/app/webroot/img/profile_img/' . $user['User']['image'];
+			}
+			echo $this->Html->image($imgSrc, array('id' => 'pic', 'name' => 'pic', 'width' => '160', 'height' => '160', 'class' => 'img-thumbnail')); 
+		?>
 	</div>
 	<div class="col-lg-4">
 		<ul class="chat">
@@ -23,7 +25,15 @@
 		 		(<?php echo $this->Html->link('Edit', array('controller' => 'users', 'action' => 'editprofile', $user['User']['id'])); ?>)
 		 		</h3>
 		 	</li>	
-			<li>Gender : <?php echo ($user['User']['gender'] == 1) ? 'Male' : 'Female'; ?></li>	
+			<li>
+				Gender : <?php 
+					if ($user['User']['gender'] == 1) { 
+						echo 'Male';
+					} else if ($user['User']['gender'] == 2) { 
+						echo 'Female';
+					}
+				?>
+			</li>	
 			<li>Birthdate : <?php echo date('F d, Y', strtotime($user['User']['birthdate'])); ?></li>	
 			<li>Joined : <?php echo date('F d, Y ga', strtotime($user['User']['created'])); ?></li>	
 			<li>Last Login : <?php echo date('F d, Y ga', strtotime($user['User']['last_login_time'])); ?></li>	
