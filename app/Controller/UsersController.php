@@ -81,9 +81,9 @@ class UsersController extends AppController {
 
 	    if ($this->request->is('post') || $this->request->is('put')) {
 	        $this->User->id = $id;
-	        if ($this->Post->save($this->request->data)) {
+	        if ($this->User->save($this->request->data)) {
 	            $this->Session->setFlash(__('Your profile has been updated.'));
-	            return $this->redirect(array('action' => 'viewprofile', $id));
+	            return $this->redirect(array('action' => 'profile', $id));
 	        }
 	        $this->Session->setFlash(__('Unable to update your profile.'));
 	    }

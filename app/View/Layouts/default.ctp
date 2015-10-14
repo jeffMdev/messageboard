@@ -33,7 +33,16 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->css('bootstrap.min.css');
 		echo $this->Html->css('bootstrap-theme.css');
 		echo $this->Html->css('sb-admin-2.css');
-		echo $this->Html->css('metisMenu.min.css');
+        echo $this->Html->css('metisMenu.min.css');  
+        echo $this->Html->css('jquery-ui.css'); 
+        echo $this->Html->css('jquery-ui.theme.css'); 
+
+
+        
+    echo $this->Html->script(array(
+        'jquery.js',
+        'jquery-ui.js'
+    )); 
 
 		echo $this->fetch('meta');
 	?>
@@ -82,12 +91,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
     </div>
 		
-	<?php echo $this->Html->script(array(
-		'jquery.min.js',
+	<?php echo $this->Html->script(array(		
 		'bootstrap.min.js',
-		'sb-admin-2.js',
-		'metisMenu.min.js'
+        'metisMenu.min.js',
+		'sb-admin-2.js'
 	)); ?>
+
 
 </body>
 </html>

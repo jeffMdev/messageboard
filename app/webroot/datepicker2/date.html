@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Datepicker - Icon trigger</title>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker({
+      showOn: "button",
+      buttonImage: "calendar.gif",
+      buttonImageOnly: true,
+      buttonText: "Select date",
+      dateFormat: "yy-mm-dd",
+      showAnim: "slideDown",
+      changeMonth: true,
+      changeYear: true, 
+      minDate: "-100Y",
+      maxDate: "0D"
+    });
+  });
+  </script>
+</head>
+<body>
+ 
+<p>Date: <input type="text" id="datepicker"></p>
+ 
+ 
+</body>
+</html>

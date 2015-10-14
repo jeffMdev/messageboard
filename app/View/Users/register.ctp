@@ -17,7 +17,7 @@
         <div class="btn-group">
             <div class="btn">
             <?php 
-            echo $this->Form->submit('Register', array('class' => 'form-submit btn btn-success',  'title' => 'Click here to add the user') ); 
+            echo $this->Form->submit('Register', array('class' => 'form-submit btn btn-success')); 
             ?>
             </div>
             <?php 
