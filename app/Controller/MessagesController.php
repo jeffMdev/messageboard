@@ -31,7 +31,6 @@ class MessagesController extends AppController {
 	}
 
 	public function newMessage() {
-
 		if ($this->request->is('post')) {
 			$this->Message->create();
 			$this->request->data['Message']['from_id'] = $this->Session->read('Auth.User.id');
@@ -47,6 +46,15 @@ class MessagesController extends AppController {
 	}
 
 	public function messageDetail() {
+
 	}
 
+	public function deleteMessage($id = null) {
+		if ($this->request->is('post')) {
+			if ($this->Message->delete($id)) {
+				$this->Session->setFlash('Message has been deleted.');
+				$this->redirect(array('controller' => 'messages', 'action' => 'index'));
+			}
+		}
+	}
 }

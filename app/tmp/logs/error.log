@@ -8465,3 +8465,386 @@ Stack Trace:
 #10 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
 #11 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2015-10-15 17:13:36 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /messageboard/app/webroot/img/profile_im/
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-15 17:14:13 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /messageboard/app/webroot/img/profile_im/
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-15 18:15:15 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/fonts/fontawesome-webfont.woff?v=4.2.0
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-15 18:15:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/fonts/fontawesome-webfont.ttf?v=4.2.0
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-15 18:21:26 Error: Fatal Error (1): Cannot unset string offsets in [/var/www/messageboard/lib/Cake/View/Helper/htmlHelper.php, line 346]
+2015-10-15 18:21:26 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /messageboard/
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/var/www/messag...', 346)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/var/www/messag...', 346, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/var/www/messag...', 346, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-15 18:26:03 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_PAAMAYIM_NEKUDOTAYIM in [/var/www/messageboard/app/View/Messages/index.ctp, line 23]
+2015-10-15 18:26:03 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_PAAMAYIM_NEKUDOTAYIM
+Request URL: /messageboard/
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/messag...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/messag...', 23, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/messag...', 23, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-15 18:26:11 Error: Fatal Error (4): syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in [/var/www/messageboard/app/View/Messages/index.ctp, line 23]
+2015-10-15 18:26:11 Error: [FatalErrorException] syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM
+Request URL: /messageboard/
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/messag...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/messag...', 23, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/messag...', 23, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-15 18:28:04 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/messageboard/app/View/Messages/index.ctp, line 23]
+2015-10-15 18:28:04 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /messageboard/
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/messag...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/messag...', 23, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/messag...', 23, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-15 18:38:01 Error: [MissingActionException] Action MessagesController::deletemessages() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'deletemessages',
+)
+Request URL: /messageboard/messages/deletemessages/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-15 18:41:28 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/messageboard/app/View/Messages/index.ctp, line 76]
+2015-10-15 18:41:28 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /messageboard/
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/messag...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/messag...', 76, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/messag...', 76, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-15 18:42:23 Error: [MissingActionException] Action MessagesController::deletemessages() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'deletemessages',
+)
+Request URL: /messageboard/messages/deletemessages/5
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-15 18:42:31 Error: [MissingActionException] Action MessagesController::deletemessages() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'deletemessages',
+)
+Request URL: /messageboard/messages/deletemessages/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-15 18:47:50 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessages.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessages.ctp',
+)
+Request URL: /messageboard/messages/deletemessages/5
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:49:00 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessages.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessages.ctp',
+)
+Request URL: /messageboard/messages/deletemessages/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:50:32 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/delete_messages.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/delete_messages.ctp',
+)
+Request URL: /messageboard/messages/deleteMessages/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:52:37 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/delete_messages.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/delete_messages.ctp',
+)
+Request URL: /messageboard/messages/deleteMessages/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:53:33 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/delete_messages.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/delete_messages.ctp',
+)
+Request URL: /messageboard/messages/deleteMessages/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:54:31 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessage.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessage.ctp',
+)
+Request URL: /messageboard/messages/deletemessage/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:55:40 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessage.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessage.ctp',
+)
+Request URL: /messageboard/messages/deletemessage/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:55:47 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessage.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessage.ctp',
+)
+Request URL: /messageboard/messages/deletemessage/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:56:41 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessage.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessage.ctp',
+)
+Request URL: /messageboard/messages/deletemessage/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:57:05 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessage.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessage.ctp',
+)
+Request URL: /messageboard/messages/deletemessage/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:58:08 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessage.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessage.ctp',
+)
+Request URL: /messageboard/messages/deletemessage/5
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:59:17 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessage.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessage.ctp',
+)
+Request URL: /messageboard/messages/deletemessage/5
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:59:25 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessage.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessage.ctp',
+)
+Request URL: /messageboard/messages/deletemessage/2
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 18:59:47 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/deletemessage.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/deletemessage.ctp',
+)
+Request URL: /messageboard/messages/deletemessage/5
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-15 19:05:57 Error: [MissingActionException] Action MessagesController::deletemessage() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'deletemessage',
+)
+Request URL: /messageboard/messages/deletemessage/5
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-15 19:20:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-15 19:20:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-15 19:20:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-15 19:21:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-15 19:21:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-15 19:21:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-15 19:23:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-15 19:23:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-15 19:23:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

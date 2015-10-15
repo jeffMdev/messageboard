@@ -33,6 +33,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->css('bootstrap.min.css');
 		echo $this->Html->css('bootstrap-theme.css');
 		echo $this->Html->css('sb-admin-2.css');
+        echo $this->Html->css('font-awesome.min.css');
         echo $this->Html->css('metisMenu.min.css');  
         echo $this->Html->css('jquery-ui.css'); 
         echo $this->Html->css('jquery-ui.theme.css'); 
