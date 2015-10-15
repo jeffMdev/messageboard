@@ -3,7 +3,7 @@ App::uses('AuthComponent', 'Controller/Component');
 App::uses('AppModel', 'Model');
 
 class User extends AppModel {
-	    
+
 	public $uploadDir = 'uploads';
 
 	public $validate = array(
@@ -72,20 +72,6 @@ class User extends AppModel {
 				'required' => false,
 			)
         )
-  //       'image' => array(
-		// 	'uploadError' => array(
-		// 		'rule' => 'uploadError',
-		// 		'message' => 'Something went wrong with the file upload',
-		// 		'required' => FALSE,
-		// 		'allowEmpty' => TRUE,
-		// 	),
-		// 	'mimeType' => array(
-		// 		'rule' => array('mimeType', array('image/gif','image/png','image/jpg','image/jpeg')),
-		// 		'message' => 'Invalid file, only images allowed',
-		// 		'required' => FALSE,
-		// 		'allowEmpty' => TRUE,
-		// 	)
-		// )
     );
 
 	function isUniqueEmail($check) {

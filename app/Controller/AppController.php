@@ -37,7 +37,7 @@ class AppController extends Controller {
 	// sessions support
 	// authorization for login and logut redirect
 	public $components = array(
-		'DebugKit.Toolbar',
+		// 'DebugKit.Toolbar',
 		'Session',
         'Auth' => array(
             'loginRedirect' => array('controller' => 'users', 'action' => 'index'),

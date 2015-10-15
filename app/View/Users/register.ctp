@@ -25,7 +25,7 @@
             ?>
             <div class="btn">
             <?php
-                echo $this->html->link('Cancel', array('action' => 'login'), array('class' => 'btn btn-warning'));
+                echo $this->html->link('Cancel', array('controller' => 'users', 'action' => 'login'), array('class' => 'btn btn-warning'));
              ?>
             </div>
         </div>

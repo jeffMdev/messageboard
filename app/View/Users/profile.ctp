@@ -46,6 +46,9 @@
 		</div>
 	</div>
 </div>
+<div class="row">
+	<?php echo $this->Html->link('Back to Homage', array('controller' => 'messages', 'action' => 'index'), array('class' => 'btn btn-warning')); ?>
+</div>
 
 <style type="text/css">
 	pre{

@@ -40,7 +40,7 @@
 		            ?>
 		            <div class="btn">
 		            <?php
-		                echo $this->html->link('Cancel', array('action' => 'profile', $this->Session->read('Auth.User.id')), array('class' => 'btn btn-warning'));
+		                echo $this->html->link('Cancel', array('controller' => 'users','action' => 'profile', $this->Session->read('Auth.User.id')), array('class' => 'btn btn-warning'));
 		             ?>
 		            </div>
 		        </div>

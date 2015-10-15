@@ -15,7 +15,7 @@ class UsersController extends AppController {
         $this->Auth->allow('login','register', 'registerThankYou'); 
     }
 	
-
+    public function edit(){}
 
 	public function login() {
 		
@@ -29,7 +29,8 @@ class UsersController extends AppController {
 			if ($this->Auth->login()) {					
 				$user_id = $this->Auth->user('id');
 				$this->User->updateLastLoginTime($user_id, date('Y-m-d H:i:s'));
-				$this->redirect($this->Auth->redirectUrl());
+				// $this->redirect($this->Auth->redirectUrl());
+				$this->redirect(array('controller' => 'messages', 'action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('Invalid email or password, please try again.'));
 			}
@@ -87,27 +88,29 @@ class UsersController extends AppController {
 	    	$error = $this->request->data['User']['image']['error'];
 	    	$size = $this->request->data['User']['image']['size'];
 	    	$extension = pathinfo($this->request->data['User']['image']['name'], PATHINFO_EXTENSION);
-
-	    	$fileName = $id.'.'.$extension;
-
-	        $this->request->data['User']['image'] = $fileName;
+	        
 		  	if (!$size == 0 || $error === 0) {
+		    	$fName = $id.'.'.$extension;
+		        $this->request->data['User']['image'] = $fName;
+	    		
 	    		$uploadDir = 'profile_img';
 			    $uploadFolder = $uploadDir;
-			    $uploadPath = 'img' . DS . $uploadFolder . DS . $fileName;
-			 
-			    // Make the dir if does not exist
-			    if(!file_exists($uploadFolder)){ 
-			    	mkdir($uploadFolder); 			    	
-			    	unlink($fileName);
-			    }
+			    $uploadPath = 'img' . DS . $uploadFolder . DS . $fName;
+			
+			    unlink($fName);
+
 
 			    // Finally move from tmp to final location
 			    if (move_uploaded_file($tmp_name, $uploadPath))
 			    {
-
+			    	$fileName = $fName;
 			    }
+	    	} 
+
+	    	if (trim($fileName) == '') {
+	    		$this->request->data['User']['image'] = $this->Session->read('Auth.User.image');
 	    	}
+	    	
 	        if ($this->User->save($this->request->data)) {	      		    	
 	            $this->Session->setFlash(__('Your profile has been updated.'));
 	            return $this->redirect(array('action' => 'profile', $id));

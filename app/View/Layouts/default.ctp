@@ -36,12 +36,14 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         echo $this->Html->css('metisMenu.min.css');  
         echo $this->Html->css('jquery-ui.css'); 
         echo $this->Html->css('jquery-ui.theme.css'); 
+        echo $this->Html->css('select2.css'); 
 
 
         
     echo $this->Html->script(array(
         'jquery.js',
-        'jquery-ui.js'
+        'jquery-ui.js',
+        'select2.min.js'
     )); 
 
 		echo $this->fetch('meta');
@@ -52,11 +54,11 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
+            <div class="navbar-header navbar-right col-lg-3">
                <?php 
                     if($this->Session->check('Auth.User')){
                         echo 'Welcome ' . $this->Session->read('Auth.User.name');
-                        echo ' | ' . $this->Html->link('Profile', array('action' => 'profile', $this->Session->read('Auth.User.id')));
+                        echo ' | ' . $this->Html->link('Profile', array('controller' => 'users', 'action' => 'profile', $this->Session->read('Auth.User.id')));
                         echo ' | ' . $this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout'));
                     }
                 ?>
