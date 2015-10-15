@@ -49,6 +49,16 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 		echo $this->fetch('meta');
 	?>
+    <style type="text/css">
+        #flashMessage{
+            background: #C8E5BC;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #3C763D;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 	<div id="wrapper">

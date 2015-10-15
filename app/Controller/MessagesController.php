@@ -4,8 +4,7 @@ class MessagesController extends AppController {
 
 	var $uses = array('User', 'Message');
 
-	public function index() {		
-
+	public function index() {
 		$ses_id = $this->Session->read('Auth.User.id');
 
 		$sql = "select 
@@ -24,8 +23,7 @@ class MessagesController extends AppController {
 				      END
 				    ) ";
 
-		$messages = $this->Message->query($sql);
-			
+		$messages = $this->Message->query($sql);			
 
 		$this->set('messages', $messages);
 	}
@@ -45,8 +43,19 @@ class MessagesController extends AppController {
 		$this->set('users' , $users);
 	}
 
-	public function messageDetail() {
+	public function messageDetail($id = null) {
+		$ses_id = $this->Session->read('Auth.User.id');
 
+		$sql = "select msg.*, usr.id, usr.name, usr.image 
+				from messages as msg
+				join users as usr
+				on usr.id = msg.from_id
+				where msg.to_id in ({$ses_id},{$id}) AND msg.from_id in ({$ses_id},{$id})
+				order by msg.created desc";
+
+		$messages = $this->Message->query($sql);			
+
+		$this->set('messages', $messages);
 	}
 
 	public function deleteMessage($id = null) {

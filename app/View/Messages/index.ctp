@@ -4,7 +4,6 @@
 <div class="row">
 	<?php echo $this->html->link('New Message', array('controller' => 'messages', 'action' => 'newmessage'), array('class' => 'btn btn-success')); ?>
 </div>
-<div class="row"></div>
 <div class="row">
 	<div class="col-lg-8">
 		<br>
@@ -39,7 +38,7 @@
 		                    	<li class="h4"><?php echo $message['usr']['name']; ?></li>
 		                    	<li class="h6"><?php echo $message['msg']['content']; ?></li>
 		                    	<li class="text-info h6">Date: <?php echo date('F d, Y g:i A', strtotime($message['msg']['created'])); ?></li>
-		                    	<li><?php echo $this->Html->link('View Details', array('controller' => 'messages', 'action' => 'messagedetail', $message['msg']['id'])); ?></li>
+		                    	<li><?php echo $this->Html->link('View Details', array('controller' => 'messages', 'action' => 'messagedetail', $message['usr']['id'])); ?></li>
 		                    	<li>
 		                    		<?php echo $this->Form->postLink(
 						                    'Delete',
@@ -72,7 +71,7 @@
 		                    	<li class="h4"><?php echo $message['usr']['name']; ?></li>
 		                    	<li class="h6"><?php echo $message['msg']['content']; ?></li>
 		                    	<li class="text-info h6">Date: <?php echo date('F d, Y g:i A', strtotime($message['msg']['created'])); ?></li>
-		                    	<li><?php echo $this->Html->link('View Details', array('controller' => 'messages', 'action' => 'messagedetail', $message['msg']['id'])); ?></li>
+		                    	<li><?php echo $this->Html->link('View Details', array('controller' => 'messages', 'action' => 'messagedetail', $message['msg']['to_id'])); ?></li>
 		                    	<li>
 		                    		<?php echo $this->Form->postLink(
 						                    'Delete',
