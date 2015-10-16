@@ -21,7 +21,7 @@ class MessagesController extends AppController {
 				        WHEN msg.from_id = {$ses_id} THEN msg.to_id
 				        WHEN msg.to_id = {$ses_id} THEN msg.from_id
 				      END
-				    ) ";
+				    ) order by msg.created desc";
 
 		$messages = $this->Message->query($sql);			
 
@@ -44,17 +44,21 @@ class MessagesController extends AppController {
 	}
 
 	public function messageDetail($id = null) {
-		$ses_id = $this->Session->read('Auth.User.id');
-		$sql = "select msg.*, usr.id, usr.name, usr.image 
-				from messages as msg
-				join users as usr
-				on usr.id = msg.from_id
-				where msg.to_id in ({$ses_id},{$id}) AND msg.from_id in ({$ses_id},{$id})
-				order by msg.created desc";
+		if($this->Message->find('count', array('Message.id' => $id)) > 0) {
+			$ses_id = $this->Session->read('Auth.User.id');
+			$sql = "select msg.*, usr.id, usr.name, usr.image 
+					from messages as msg
+					join users as usr
+					on usr.id = msg.from_id
+					where msg.to_id in ({$ses_id},{$id}) AND msg.from_id in ({$ses_id},{$id})
+					order by msg.created desc";
 
-		$messages = $this->Message->query($sql);			
+			$messages = $this->Message->query($sql);			
 
-		$this->set('messages', $messages);
+			$this->set('messages', $messages);
+		} else {
+			$this->redirect(array('controller' => 'messages', 'action' => 'index'));
+		}
 	}
 
 	public function replyAjax() {
@@ -78,7 +82,7 @@ class MessagesController extends AppController {
 	    }
 	}
 
-	public function deleteMessage($id = null) {
+	public function deleteMessage() {
 
 		if($this->request->is('ajax')) {
 			if(!empty($this->request->data)) {
@@ -88,11 +92,21 @@ class MessagesController extends AppController {
 					echo false;
 				}
 			}
-		} else if ($this->request->is('post')) {
-			if ($this->Message->delete($id)) {
-				$this->Session->setFlash('Message has been deleted.');
-				$this->redirect(array('controller' => 'messages', 'action' => 'index'));
-			}
+		} 
+	}
+
+	public function deleteMessagesWithFromOrTo($id = null) {
+
+		if($this->request->is('ajax')) {
+			$id = $this->request->data['id'];
+			$msg = $this->Message->findById($id);
+			$from_id = $msg['Message']['from_id'];
+			$to_id = $msg['Message']['to_id'];
+
+			$sql = "delete from messages where from_id in ({$from_id},{$to_id}) and to_id in ({$from_id},{$to_id})";
+
+			$this->Message->query($sql, $cachequeries = false);
+			echo true;
 		} 
 	}
 }

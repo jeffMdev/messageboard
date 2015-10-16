@@ -63,16 +63,7 @@
 		                    	<li class="h4"><?php echo $message['usr']['name']; ?></li>
 		                    	<li class="h6"><?php echo $message['msg']['content']; ?></li>
 		                    	<li class="text-info h6"><?php echo date('F d, Y g:i A', strtotime($message['msg']['created'])); ?></li>		                    	
-		                    	<li>
-		                    		<?php 
-		                    // 			echo $this->Form->postLink(
-						                //     'Delete',
-						                //     array('controller' => 'messages', 'action' => 'deletemessage', $message['msg']['id']),
-						                //     array('confirm' => 'Are you sure you want to delete this message?')
-						                // );
-		                    		?>
-		                    		<button class="dels btn btn-danger" id="del<?php echo $message['msg']['id']; ?>">Delete Message</button>
-		                    	</li>
+		                    	<li><button class="dels btn btn-danger" id="del<?php echo $message['msg']['id']; ?>">Delete Message</button></li>
 		                    </ul>
 	                	</div>
                 	<?php else : ?>
@@ -97,16 +88,7 @@
 		                    	<li class="h4"><?php echo $message['usr']['name']; ?></li>
 		                    	<li class="h6"><?php echo $message['msg']['content']; ?></li>
 		                    	<li class="text-info h6"><?php echo date('F d, Y g:i A', strtotime($message['msg']['created'])); ?></li>
-		                    	<li>
-		                    		<?php 
-		                    // 			echo $this->Form->postLink(
-						                //     'Delete',
-						                //     array('controller' => 'messages', 'action' => 'deletemessage', $message['msg']['id']),
-						                //     array('confirm' => 'Are you sure you want to delete this message?')
-						                // );
-		                    		?>
-		                    		<button class="dels btn btn-danger" id="del<?php echo $message['msg']['id']; ?>">Delete Message</button>
-		                    	</li>
+		                    	<li><button class="dels btn btn-danger" id="del<?php echo $message['msg']['id']; ?>">Delete Message</button></li>
 		                    </ul>
 	                	</div>
 					<?php endif; ?>
@@ -152,9 +134,7 @@
 	                    	'<li class="h4">' + data.sender_name +' </li>' +
 	                    	'<li class="h6">' + data.message + '</li>' +
 	                    	'<li class="text-info h6">' + data.created + '</li>' +
-	                    	'<li>' +
-								'<button class="dels btn btn-danger" id="del' + data.last_msg_id + '">Delete Message</button>' + 
-	                    	'</li>' +
+	                    	'<li><button class="dels btn btn-danger" id="del' + data.last_msg_id + '">Delete Message</button></li>' +
 	                    '</ul>' +
                 	'</div>';
 
@@ -174,7 +154,6 @@
 					{id: $id},
 					function(result){						
 						if(result == true) {
-							// $("#" + $id).delay(500).fadeTo("slow", 0.2);
 							$("#" + $id).fadeOut( "slow", function() {
 								$("#" + $id).remove();							    
 							});

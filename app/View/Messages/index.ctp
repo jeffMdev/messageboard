@@ -39,7 +39,7 @@
 		                    	<li class="h6"><?php echo $message['msg']['content']; ?></li>
 		                    	<li class="text-info h6"><?php echo date('F d, Y g:i A', strtotime($message['msg']['created'])); ?></li>
 		                    	<li class="">
-		                    		<?php echo $this->Html->link('View Details', array('controller' => 'messages', 'action' => 'messagedetail', $message['msg']['to_id']), array('class' => 'btn btn-warning')); ?>
+		                    		<?php echo $this->Html->link('View Details', array('controller' => 'messages', 'action' => 'messagedetail', $message['msg']['from_id']), array('class' => 'btn btn-warning')); ?>
 		                    		<button class="dels btn btn-danger" id="del<?php echo $message['msg']['id']; ?>">Delete Message</button>
 		                    	</li>
 		                    </ul>
@@ -99,14 +99,13 @@
 		function deleteMessageAjax($id) {
 			if ($id != '' || $id != 0) {
 				$.post(
-					"<?php echo $this->request->webroot; ?>messages/deletemessage",
+					"<?php echo $this->request->webroot; ?>messages/deletemessageswithfromorto",
 					{id: $id},
 					function(result){						
 						if(result == true) {
-							// $("#" + $id).delay(500).fadeTo("slow", 0.2);
 							$("#" + $id).fadeOut( "slow", function() {
 								$("#" + $id).remove();							    
-							});
+							});																		
 						}
 					}
 				);
