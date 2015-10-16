@@ -21,7 +21,7 @@ class MessagesController extends AppController {
 				        WHEN msg.from_id = {$ses_id} THEN msg.to_id
 				        WHEN msg.to_id = {$ses_id} THEN msg.from_id
 				      END
-				    ) order by msg.created desc";
+				    ) order by msg.created desc limit 1";
 
 		$messages = $this->Message->query($sql);			
 
@@ -109,4 +109,116 @@ class MessagesController extends AppController {
 			echo true;
 		} 
 	}
+
+	public function showMore($limit = 0, $range = 0) {
+
+		if($this->request->is('ajax')) {
+			$limit = $this->request->data['limit'];
+			$range = $this->request->data['range'];
+			$ses_id = $this->Session->read('Auth.User.id');
+			$totalRows = $this->countMessageList($ses_id);
+			$messages = $this->getMoreMessageList($limit, $range, $ses_id);
+
+			$data = '';
+			if($messages) {
+				foreach ($messages as $message) {
+					if ($message['msg']['from_id'] != $this->Session->read('Auth.User.id')) : 
+						$imgSrc = '/app/webroot/img/pic_00.jpg';
+						if (!empty($message['usr']['image'])) {
+						$imgSrc = '/app/webroot/img/profile_img/' . $message['usr']['image'];
+						}
+						$data .= '<li>
+						<div class="ajax-massage alert alert-success alert-dismissable" id="' . $message['msg']['id'] . '">               
+		                    <ul class="list-unstyled">
+		                    	<li class="navbar-left">
+			                    	<img src="' . $imgSrc . '" class="img-thumbnail" width="60" height="60" class="img-thumbnail" style="margin-right:10px;">
+		                    	</li>
+		                    	<li class="h4">' . $message['usr']['name'] . '</li>
+		                    	<li class="h6">' . $message['msg']['content'] . '</li>
+		                    	<li class="text-info h6">' . date('F d, Y g:i A', strtotime($message['msg']['created'])) . '</li>
+		                    	<li>
+		                    		<a href="' . $this->request->webroot . 'messages/messagedetail/' . $message['msg']['from_id'] . '" class="btn btn-warning">View Details</a>
+		                    		<button class="dels btn btn-danger" id="del' . $message['msg']['id'] . '">Delete Message</button>
+		                    	</li>
+		                    </ul>
+	                	</div>
+	                	</li>';
+                	else : 
+                		$imgSrc = $this->request->webroot .'app/webroot/img/pic_00.jpg';
+						if (!empty($message['usr']['image'])) {
+							$imgSrc = $this->request->webroot . 'app/webroot/img/profile_img/' . $message['usr']['image'];
+						}
+                		$data .= '<li>
+						<div class="ajax-massage alert alert-info alert-dismissable" id="' . $message['msg']['id'] . '">               
+		                    <ul class="list-unstyled">
+		                    	<li class="navbar-left">
+			                    	<img src="' . $imgSrc . '" class="img-thumbnail" width="60" height="60" class="img-thumbnail" style="margin-right:10px;">
+		                    	</li>
+		                    	<li class="h4">' . $message['usr']['name'] . '</li>
+		                    	<li class="h6">' . $message['msg']['content'] . '</li>
+		                    	<li class="text-info h6">' . date('F d, Y g:i A', strtotime($message['msg']['created'])) . '</li>
+		                    	<li>
+		                    		<a href="' . $this->request->webroot . 'messages/messagedetail/' . $message['msg']['to_id'] . '" class="btn btn-warning">View Details</a>
+		                    		<button class="dels btn btn-danger" id="del' . $message['msg']['id'] . '">Delete Message</button>
+		                    	</li>
+		                    </ul>
+	                	</div>
+	                	</li>';
+					endif;
+				}
+			echo json_encode(array(
+				'limit' => $limit,
+				'range' => $range,
+				'htm' => $data
+				));
+			}
+			return null;
+		}
+
+	}
+
+	public function countMessageList($ses_id) {
+            $sql = "select 
+                     msg.*, usr.id, usr.name, usr.image
+                    from (
+                    select * from messages as msg1
+                    where msg1.to_id = {$ses_id} OR msg1.from_id = {$ses_id}
+                    order by msg1.created desc
+                    ) as msg 
+                    join users as usr
+                    on usr.id = msg.from_id
+                    group by (
+                          CASE
+                            WHEN msg.from_id = {$ses_id} THEN msg.to_id
+                            WHEN msg.to_id = {$ses_id} THEN msg.from_id
+                          END
+                        ) order by msg.created desc";
+            
+            $messages = $this->Message->query($sql);
+            return count($messages);
+    }
+
+    public function getMoreMessageList($limit = 0, $range = 0, $ses_id = 0) {
+
+            $sql = "select 
+                     msg.*, usr.id, usr.name, usr.image
+                    from (
+                    select * from messages as msg1
+                    where msg1.to_id = {$ses_id} OR msg1.from_id = {$ses_id}
+                    order by msg1.created desc
+                    ) as msg 
+                    join users as usr
+                    on usr.id = msg.from_id
+                    group by (
+                          CASE
+                            WHEN msg.from_id = {$ses_id} THEN msg.to_id
+                            WHEN msg.to_id = {$ses_id} THEN msg.from_id
+                          END
+                        ) order by msg.created desc limit {$range},{$limit}";
+            $messages = $this->Message->query($sql);
+            return $messages;
+        
+
+    }
+
 }

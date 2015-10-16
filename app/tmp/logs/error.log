@@ -14141,3 +14141,1109 @@ Request URL: /messageboard/css/select2.png
 Stack Trace:
 #0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-10-16 17:00:16 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/messageboard/app/View/Layouts/default.ctp, line 48]
+2015-10-16 17:00:16 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /messageboard/
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/messag...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/messag...', 48, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/messag...', 48, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-16 17:02:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:02:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:02:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:04:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:04:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:04:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:07:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:07:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:07:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:07:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:07:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:07:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:08:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:24:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/js/show-more.js
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 17:47:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 18:08:13 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/messageboard/app/Controller/MessagesController.php, line 148]
+2015-10-16 18:08:13 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /messageboard/
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/messag...', 148)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/messag...', 148, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/messag...', 148, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-16 18:30:13 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/messageboard/app/Controller/MessagesController.php, line 134]
+2015-10-16 18:30:13 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /messageboard/messages/messagedetail/3
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/messag...', 134)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/messag...', 134, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/messag...', 134, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-16 18:52:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 18:55:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 18:55:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 18:56:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 18:56:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 18:57:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 18:58:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 18:59:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:01:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:01:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:02:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:02:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:03:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:03:28 Error: Fatal Error (1): Call to a member function query() on a non-object in [/var/www/messageboard/app/Model/Message.php, line 38]
+2015-10-16 19:03:28 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 38, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 38, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-16 19:04:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:04:31 Error: Fatal Error (1): Call to a member function query() on a non-object in [/var/www/messageboard/app/Model/Message.php, line 38]
+2015-10-16 19:04:31 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 38, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 38, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-16 19:06:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:06:19 Error: Fatal Error (1): Call to a member function query() on a non-object in [/var/www/messageboard/app/Model/Message.php, line 38]
+2015-10-16 19:06:19 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 38, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 38, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-16 19:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:07:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:07:10 Error: Fatal Error (1): Call to a member function is() on a non-object in [/var/www/messageboard/app/Model/Message.php, line 44]
+2015-10-16 19:07:10 Error: [FatalErrorException] Call to a member function is() on a non-object
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 44, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 44, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-16 19:08:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:08:39 Error: Fatal Error (1): Call to a member function query() on a non-object in [/var/www/messageboard/app/Model/Message.php, line 40]
+2015-10-16 19:08:39 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 40, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 40, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-16 19:08:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:09:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:09:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:09:17 Error: Fatal Error (1): Call to a member function query() on a non-object in [/var/www/messageboard/app/Model/Message.php, line 40]
+2015-10-16 19:09:17 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 40, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 40, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-16 19:10:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:10:14 Error: Fatal Error (1): Call to a member function query() on a non-object in [/var/www/messageboard/app/Model/Message.php, line 42]
+2015-10-16 19:10:14 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/messag...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/messag...', 42, Array)
+#2 /var/www/messageboard/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/messag...', 42, Array)
+#3 /var/www/messageboard/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-16 19:12:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:12:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:12:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'countMessageList' at line 1
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('countMessageLis...', Array)
+#2 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('countMessageLis...', Array, Array)
+#3 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('countMessageLis...', Array, Array)
+#4 /var/www/messageboard/lib/Cake/Model/Model.php(808): DboSource->query('countMessageLis...', Array, Object(Message))
+#5 /var/www/messageboard/app/Controller/MessagesController.php(119): Model->__call('countMessageLis...', Array)
+#6 /var/www/messageboard/app/Controller/MessagesController.php(119): Message->countMessageList('1')
+#7 [internal function]: MessagesController->showMore()
+#8 /var/www/messageboard/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-16 19:15:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'countMessageList' at line 1
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('countMessageLis...', Array)
+#2 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('countMessageLis...', Array, Array)
+#3 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('countMessageLis...', Array, Array)
+#4 /var/www/messageboard/lib/Cake/Model/Model.php(808): DboSource->query('countMessageLis...', Array, Object(Message))
+#5 /var/www/messageboard/app/Controller/MessagesController.php(119): Model->__call('countMessageLis...', Array)
+#6 /var/www/messageboard/app/Controller/MessagesController.php(119): Message->countMessageList('1')
+#7 [internal function]: MessagesController->showMore()
+#8 /var/www/messageboard/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-16 19:15:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'countMessageList' at line 1
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('countMessageLis...', Array)
+#2 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('countMessageLis...', Array, Array)
+#3 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('countMessageLis...', Array, Array)
+#4 /var/www/messageboard/lib/Cake/Model/Model.php(808): DboSource->query('countMessageLis...', Array, Object(Message))
+#5 /var/www/messageboard/app/Controller/MessagesController.php(119): Model->__call('countMessageLis...', Array)
+#6 /var/www/messageboard/app/Controller/MessagesController.php(119): Message->countMessageList('1')
+#7 [internal function]: MessagesController->showMore()
+#8 /var/www/messageboard/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-16 19:15:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'countMessageList' at line 1
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('countMessageLis...', Array)
+#2 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('countMessageLis...', Array, Array)
+#3 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('countMessageLis...', Array, Array)
+#4 /var/www/messageboard/lib/Cake/Model/Model.php(808): DboSource->query('countMessageLis...', Array, Object(Message))
+#5 /var/www/messageboard/app/Controller/MessagesController.php(119): Model->__call('countMessageLis...', Array)
+#6 /var/www/messageboard/app/Controller/MessagesController.php(119): Message->countMessageList('1')
+#7 [internal function]: MessagesController->showMore()
+#8 /var/www/messageboard/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-16 19:15:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'countMessageList' at line 1
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('countMessageLis...', Array)
+#2 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('countMessageLis...', Array, Array)
+#3 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('countMessageLis...', Array, Array)
+#4 /var/www/messageboard/lib/Cake/Model/Model.php(808): DboSource->query('countMessageLis...', Array, Object(Message))
+#5 /var/www/messageboard/app/Controller/MessagesController.php(119): Model->__call('countMessageLis...', Array)
+#6 /var/www/messageboard/app/Controller/MessagesController.php(119): Message->countMessageList('1')
+#7 [internal function]: MessagesController->showMore()
+#8 /var/www/messageboard/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-16 19:16:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:16:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMoreMessageList' at line 1
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMoreMessageL...', Array)
+#2 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMoreMessageL...', Array, Array)
+#3 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMoreMessageL...', Array, Array)
+#4 /var/www/messageboard/lib/Cake/Model/Model.php(808): DboSource->query('getMoreMessageL...', Array, Object(Message))
+#5 /var/www/messageboard/app/Controller/MessagesController.php(120): Model->__call('getMoreMessageL...', Array)
+#6 /var/www/messageboard/app/Controller/MessagesController.php(120): Message->getMoreMessageList('0', '1', '1')
+#7 [internal function]: MessagesController->showMore()
+#8 /var/www/messageboard/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-16 19:17:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:17:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMoreMessageList' at line 1
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getMoreMessageL...', Array)
+#2 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getMoreMessageL...', Array, Array)
+#3 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getMoreMessageL...', Array, Array)
+#4 /var/www/messageboard/lib/Cake/Model/Model.php(808): DboSource->query('getMoreMessageL...', Array, Object(Message))
+#5 /var/www/messageboard/app/Controller/MessagesController.php(120): Model->__call('getMoreMessageL...', Array)
+#6 /var/www/messageboard/app/Controller/MessagesController.php(120): Message->getMoreMessageList('0', '1', '1')
+#7 [internal function]: MessagesController->showMore()
+#8 /var/www/messageboard/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-16 19:20:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:20:08 Error: [MissingViewException] View file "/var/www/messageboard/app/View/Messages/showmore.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/messageboard/app/View/Messages/showmore.ctp',
+)
+Request URL: /messageboard/messages/showmore
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-16 19:21:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:21:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:22:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:23:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:27:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:28:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:29:17 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:29:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:30:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:30:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:31:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:31:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:31:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:31:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:32:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:32:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:32:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:35:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:35:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:37:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:39:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:39:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:39:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2.png
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-16 19:40:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/select2-spinner.gif
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

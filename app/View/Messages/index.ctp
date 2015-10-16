@@ -13,9 +13,11 @@
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">    
-            	<?php if($messages) : ?>        	
+            	<?php if($messages) : ?>   
+            	<ul class="show-more list-unstyled">	
 				<?php foreach ($messages as $message) : ?>
 					<?php if ($message['msg']['from_id'] != $this->Session->read('Auth.User.id')) : ?>
+						<li>
 						<div class="ajax-massage alert alert-success alert-dismissable" id="<?php echo $message['msg']['id']; ?>">               
 		                    <ul class="list-unstyled">
 		                    	<li class="navbar-left"><?php 
@@ -44,7 +46,9 @@
 		                    	</li>
 		                    </ul>
 	                	</div>
+	                	</li>
                 	<?php else : ?>
+                		<li class="list-unstyled">
 	                	<div class="ajax-massage alert alert-info alert-dismissable" id="<?php echo $message['msg']['id']; ?>">
 		                    <ul class="list-unstyled">
 		                    	<li class="navbar-right"><?php 
@@ -72,21 +76,34 @@
 		                    	</li>
 		                    </ul>
 	                	</div>
-					<?php endif; ?>
-					
+	                	</li>
+					<?php endif; ?>					
 				<?php endforeach; ?>
+				</ul>
 				<?php else : ?>
 					You have no messages!
 				<?php endif; ?>
+				<div id="addshowmore"></div>
+				
             </div>
             <!-- .panel-body -->
         </div>
         <!-- /.panel -->
+        <?php if ($messages) : ?>
+			<a href="#" id="show-more-link">Show More</a>
+		<?php  endif; ?>
     </div>
 </div>
-
+<input type="hidden" id="limit" value="1">
+<input type="hidden" id="range" value="1">
 <script>
 	$(document).ready(function(){
+
+		// $('ul.show-more').hideMaxListItems({ 
+		// 	'max':3, 
+		// 	'speed':2000, 
+		// 	'moreText':'Show More'
+		// }); 
 
 		$(document).on('click', 'button.dels', function(){
 			if (confirm('Are you sure you want to delete this message?')) {	
@@ -94,6 +111,29 @@
 				id = id.replace('del','');
 				deleteMessageAjax(id);
 			}
+		});
+
+		$(document).on('click', 'a#show-more-link', function(){
+			var iLimit = $('#limit').val();
+			var iRange = $('#range').val();
+			$.post(
+					"<?php echo $this->request->webroot; ?>messages/showmore",
+					{
+						limit: iLimit, 
+						range: iRange
+					},
+					function(data){						
+						if(data != null) {
+							iLimit = parseInt(iLimit);
+							iRange = parseInt(iRange) + 1;
+							$('#limit').val(iLimit);							
+							$('#range').val(iRange);							
+                			$(data.htm).appendTo("div.panel-body");
+                			// alert(data.htm);
+						}
+					},
+					"json"
+				);
 		});
 
 		function deleteMessageAjax($id) {

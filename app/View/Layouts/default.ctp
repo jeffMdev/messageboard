@@ -44,7 +44,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
     echo $this->Html->script(array(
         'jquery.js',
         'jquery-ui.js',
-        'select2.min.js'
+        'select2.min.js',
+        'hideMaxListItem.js'
     )); 
 
 		echo $this->fetch('meta');

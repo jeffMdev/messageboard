@@ -1,6 +1,10 @@
 <?php 
 
+App::uses('Message', 'Model');
+
 class Message extends AppModel {
+
+    var $uses = array('Message');
 
 	public $validate = array(
 		'to_id' => array(
@@ -18,7 +22,5 @@ class Message extends AppModel {
         )
     );
 
-	public function getMessageList() {
-		// return $this->Message->find('all');		
-	}
+    
 }

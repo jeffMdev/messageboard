@@ -38,9 +38,11 @@
             <!-- /.panel-heading -->
             <div class="panel-body" id="messages-list">   
             	<p></p>
-            	<?php if($messages) : ?>        	
+            	<?php if($messages) : ?>   
+            	<ul class="show-more list-unstyled">	     	
 				<?php foreach ($messages as $message) : ?>
 					<?php if ($message['msg']['from_id'] != $this->Session->read('Auth.User.id')) : ?>
+						<li>
 						<div class="ajax-massage alert alert-success alert-dismissable" id="<?php echo $message['msg']['id']; ?>">               
 		                    <ul class="list-unstyled">
 		                    	<li class="navbar-left"><?php 
@@ -66,7 +68,9 @@
 		                    	<li><button class="dels btn btn-danger" id="del<?php echo $message['msg']['id']; ?>">Delete Message</button></li>
 		                    </ul>
 	                	</div>
+	                	</li>
                 	<?php else : ?>
+                		<li>
 	                	<div class="ajax-massage alert alert-info alert-dismissable" id="<?php echo $message['msg']['id']; ?>">
 		                    <ul class="list-unstyled">
 		                    	<li class="navbar-right"><?php 
@@ -91,9 +95,11 @@
 		                    	<li><button class="dels btn btn-danger" id="del<?php echo $message['msg']['id']; ?>">Delete Message</button></li>
 		                    </ul>
 	                	</div>
+	                	</li>
 					<?php endif; ?>
 					
 				<?php endforeach; ?>
+				</ul>
 				<?php else : ?>
 					You have no messages!
 				<?php endif; ?>
@@ -106,6 +112,12 @@
 
 <script>
 	$(document).ready(function(){
+
+		$('ul.show-more').hideMaxListItems({ 
+			'max':3, 
+			'speed':2000, 
+			'moreText':'Show More'
+		}); 
 
 		$(document).on('click', 'button.dels', function(){
 			if (confirm('Are you sure you want to delete this message?')) {	
