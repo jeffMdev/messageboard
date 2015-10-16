@@ -48,7 +48,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
     )); 
 
 		echo $this->fetch('meta');
-	?>
+
+        echo $this->JS->WriteBuffer(array('cache' => true));
+    ?>
+
+
+
     <style type="text/css">
         #flashMessage{
             background: #C8E5BC;
@@ -68,7 +73,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
             <div class="navbar-header navbar-right col-lg-3">
                <?php 
                     if($this->Session->check('Auth.User')){
-                        echo 'Welcome ' . $this->Session->read('Auth.User.name');
+                        echo 'Welcome <b>' . $this->Session->read('Auth.User.name') . '</b>';
                         echo ' | ' . $this->Html->link('Profile', array('controller' => 'users', 'action' => 'profile', $this->Session->read('Auth.User.id')));
                         echo ' | ' . $this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout'));
                     }

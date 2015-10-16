@@ -16,7 +16,7 @@
             	<?php if($messages) : ?>        	
 				<?php foreach ($messages as $message) : ?>
 					<?php if ($message['msg']['from_id'] != $this->Session->read('Auth.User.id')) : ?>
-						<div class="alert alert-success alert-dismissable">               
+						<div class="ajax-massage alert alert-success alert-dismissable" id="<?php echo $message['msg']['id']; ?>">               
 		                    <ul class="list-unstyled">
 		                    	<li class="navbar-left"><?php 
 		                    		$imgSrc = '/app/webroot/img/pic_00.jpg';
@@ -37,20 +37,15 @@
 		                    	</li>
 		                    	<li class="h4"><?php echo $message['usr']['name']; ?></li>
 		                    	<li class="h6"><?php echo $message['msg']['content']; ?></li>
-		                    	<li class="text-info h6">Date: <?php echo date('F d, Y g:i A', strtotime($message['msg']['created'])); ?></li>
-		                    	<li><?php echo $this->Html->link('View Details', array('controller' => 'messages', 'action' => 'messagedetail', $message['usr']['id'])); ?></li>
-		                    	<li>
-		                    		<?php echo $this->Form->postLink(
-						                    'Delete',
-						                    array('controller' => 'messages', 'action' => 'deletemessage', $message['msg']['id']),
-						                    array('confirm' => 'Are you sure you want to delete this message?')
-						                );
-		                    		?>
+		                    	<li class="text-info h6"><?php echo date('F d, Y g:i A', strtotime($message['msg']['created'])); ?></li>
+		                    	<li class="">
+		                    		<?php echo $this->Html->link('View Details', array('controller' => 'messages', 'action' => 'messagedetail', $message['msg']['to_id']), array('class' => 'btn btn-warning')); ?>
+		                    		<button class="dels btn btn-danger" id="del<?php echo $message['msg']['id']; ?>">Delete Message</button>
 		                    	</li>
 		                    </ul>
 	                	</div>
                 	<?php else : ?>
-	                	<div class="alert alert-info alert-dismissable">
+	                	<div class="ajax-massage alert alert-info alert-dismissable" id="<?php echo $message['msg']['id']; ?>">
 		                    <ul class="list-unstyled">
 		                    	<li class="navbar-right"><?php 
 		                    		$imgSrc = '/app/webroot/img/pic_00.jpg';
@@ -70,15 +65,10 @@
 		                    	</li>
 		                    	<li class="h4"><?php echo $message['usr']['name']; ?></li>
 		                    	<li class="h6"><?php echo $message['msg']['content']; ?></li>
-		                    	<li class="text-info h6">Date: <?php echo date('F d, Y g:i A', strtotime($message['msg']['created'])); ?></li>
-		                    	<li><?php echo $this->Html->link('View Details', array('controller' => 'messages', 'action' => 'messagedetail', $message['msg']['to_id'])); ?></li>
+		                    	<li class="text-info h6"><?php echo date('F d, Y g:i A', strtotime($message['msg']['created'])); ?></li>
 		                    	<li>
-		                    		<?php echo $this->Form->postLink(
-						                    'Delete',
-						                    array('controller' => 'messages', 'action' => 'deletemessage', $message['msg']['id']),
-						                    array('confirm' => 'Are you sure you want to delete this message?')
-						                );
-		                    		?>
+		                    		<?php echo $this->Html->link('View Details', array('controller' => 'messages', 'action' => 'messagedetail', $message['msg']['to_id']), array('class' => 'btn btn-warning')); ?>
+		                    		<button class="dels btn btn-danger" id="del<?php echo $message['msg']['id']; ?>">Delete Message</button>
 		                    	</li>
 		                    </ul>
 	                	</div>
@@ -94,3 +84,36 @@
         <!-- /.panel -->
     </div>
 </div>
+
+<script>
+	$(document).ready(function(){
+
+		$(document).on('click', 'button.dels', function(){
+			if (confirm('Are you sure you want to delete this message?')) {	
+				var id = $(this).attr('id');
+				id = id.replace('del','');
+				deleteMessageAjax(id);
+			}
+		});
+
+		function deleteMessageAjax($id) {
+			if ($id != '' || $id != 0) {
+				$.post(
+					"<?php echo $this->request->webroot; ?>messages/deletemessage",
+					{id: $id},
+					function(result){						
+						if(result == true) {
+							// $("#" + $id).delay(500).fadeTo("slow", 0.2);
+							$("#" + $id).fadeOut( "slow", function() {
+								$("#" + $id).remove();							    
+							});
+						}
+					}
+				);
+			}
+		}
+
+	});
+
+
+</script>

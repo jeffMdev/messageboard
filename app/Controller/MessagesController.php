@@ -45,7 +45,6 @@ class MessagesController extends AppController {
 
 	public function messageDetail($id = null) {
 		$ses_id = $this->Session->read('Auth.User.id');
-
 		$sql = "select msg.*, usr.id, usr.name, usr.image 
 				from messages as msg
 				join users as usr
@@ -58,12 +57,42 @@ class MessagesController extends AppController {
 		$this->set('messages', $messages);
 	}
 
+	public function replyAjax() {
+
+		if( $this->request->is('ajax') ) {
+		 	 $this->request->data['from_id'] = $this->Session->read('Auth.User.id');
+		 	 $this->request->data['image'] = $this->Session->read('Auth.User.image');
+		 	 $message_content = $this->request->data['content'];
+		     $this->Message->create();
+		     if ($this->Message->save($this->request->data)) {
+		     	$msg_id = $this->Message->getLastInsertId();
+
+		     	echo json_encode(array(
+		     		'last_msg_id' => $msg_id,
+		     		'message' => $message_content,
+		     		'created' => date('F d, Y g:i A', strtotime(date('Y-m-d H:i:s'))),
+		     		'image' => $this->Session->read('Auth.User.image'),
+		     		'sender_name' => $this->Session->read('Auth.User.name')
+		     	));
+		     }
+	    }
+	}
+
 	public function deleteMessage($id = null) {
-		if ($this->request->is('post')) {
+
+		if($this->request->is('ajax')) {
+			if(!empty($this->request->data)) {
+				if ($this->Message->delete($this->request->data)) {
+					echo true;
+				} else {
+					echo false;
+				}
+			}
+		} else if ($this->request->is('post')) {
 			if ($this->Message->delete($id)) {
 				$this->Session->setFlash('Message has been deleted.');
 				$this->redirect(array('controller' => 'messages', 'action' => 'index'));
 			}
-		}
+		} 
 	}
 }

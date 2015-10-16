@@ -33,9 +33,8 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-	// added the debug toolkit
-	// sessions support
-	// authorization for login and logut redirect
+	var $helper = array('Html', 'Js', 'Form');
+
 	public $components = array(
 		// 'DebugKit.Toolbar',
 		'Session',
@@ -50,7 +49,9 @@ class AppController extends Controller {
 	            )
 	        )
  
-        ));
+        ),
+        'RequestHandler'
+    );
 
 	
 	
