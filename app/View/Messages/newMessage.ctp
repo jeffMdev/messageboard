@@ -13,7 +13,7 @@
 		<?php 
 			echo $this->Form->create('Message');
 			echo $this->Form->label('name', 'Recipient <span class="mandatory">*</span>');				
-			echo $this->Form->input('to_id',array('label' => false, 'placeholder' => 'Search for a recipient', 'type' => 'text', 'class' => 'form-control input-sm'));
+			echo $this->Form->input('to_id',array('label' => false, 'placeholder' => 'Search for a recipient', 'type' => 'text', 'class' => 'form-control input-sm hidden'));
 		?>
 			<p>
 				<select class="js-example-templating form-control input-sm" id="recipient">
