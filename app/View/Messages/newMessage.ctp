@@ -1,3 +1,9 @@
+<style type="text/css">
+.img-flag {
+  height: 20px;
+  width: 20px;
+}
+</style>
 <div class="row error-message"></div>
 <div class="row">
         <h1 class="page-header">New Message</h1>
@@ -10,10 +16,13 @@
 			echo $this->Form->input('to_id',array('label' => false, 'placeholder' => 'Search for a recipient', 'type' => 'text', 'class' => 'form-control input-sm hidden'));
 		?>
 			<p>
-				<select class="js-example-templating js-states form-control" id="recipient" required>
-					<option value="0"></option>
+				<select class="js-example-templating form-control input-sm" id="recipient">
+					<option label="pic_00.jpg" value="0"></option>
 					<?php foreach($users as $user) : ?>
-						<option value="<?php echo $user['User']['id'] ?>"> <?php echo $user['User']['name']; ?> </option>
+						<?php 
+							$imgSrc = ($user['User']['image'] != '' || $user['User']['image'] != null) ? $user['User']['image'] : 'pic_00.jpg';
+						?>
+						<option label="<?php echo $imgSrc; ?>" value="<?php echo $user['User']['id']; ?>"> <?php echo $user['User']['name']; ?> </option>
 					<?php endforeach; ?>
 				</select>
 			</p>
@@ -40,20 +49,20 @@
     </div>	
 </div>
 
-<script type="text/javascript">
-	// $(".js-example-basic-multiple").select2();	
+<script type="text/javascript">	
 $(document).ready(function(){
+
 	$('.error-message').hide();
+
 	function formatState (state) {
 	  if (!state.id) { return state.text; }
-	  var $state = $(
-	    '<span><img src="/app/webroot/img/profile_img/' + state.element.value.toLowerCase() + '" class="img-flag" /> ' + state.text + '</span>'
-	  );
+	  var $state = $('<span><img src="<?php echo $this->request->webroot; ?>app/webroot/img/profile_img/' + state.element.label.toLowerCase() + '" class="img-flag" /> ' + state.text + '</span>');
 	  return $state;
 	};
 	 
 	$(".js-example-templating").select2({
-	  templateResult: formatState
+	  templateResult: formatState,
+      templateSelection: formatState
 	});
 
 	$('a.select2-choice').css("border","none");
@@ -83,6 +92,7 @@ $(document).ready(function(){
 			$('.error-message').show();
 		}
 	});
+
 
 });
 </script>

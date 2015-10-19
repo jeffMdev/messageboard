@@ -37,14 +37,14 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         echo $this->Html->css('metisMenu.min.css');  
         echo $this->Html->css('jquery-ui.css'); 
         echo $this->Html->css('jquery-ui.theme.css'); 
-        echo $this->Html->css('select2.css'); 
+        echo $this->Html->css('select2.min.css'); 
 
 
         
     echo $this->Html->script(array(
         'jquery.js',
         'jquery-ui.js',
-        'select2.min.js',
+        'select2.full.js',
         'hideMaxListItem.js'
     )); 
 
