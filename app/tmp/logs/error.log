@@ -21056,3 +21056,21 @@ Stack Trace:
 #1 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2015-10-19 18:18:53 Error: [MissingHelperException] Helper class validationHelper could not be found.
+Exception Attributes: array (
+  'class' => 'validationHelper',
+  'plugin' => false,
+)
+Request URL: /messageboard/users/register
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('validation')
+#1 /var/www/messageboard/lib/Cake/View/View.php(837): HelperCollection->__isset('validation')
+#2 /var/www/messageboard/app/View/Users/register.ctp(10): View->__get('validation')
+#3 /var/www/messageboard/lib/Cake/View/View.php(948): include('/var/www/messag...')
+#4 /var/www/messageboard/lib/Cake/View/View.php(910): View->_evaluate('/var/www/messag...', Array)
+#5 /var/www/messageboard/lib/Cake/View/View.php(471): View->_render('/var/www/messag...')
+#6 /var/www/messageboard/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

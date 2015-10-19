@@ -1,11 +1,10 @@
 <?php if ($this->validationErrors) : ?>
 <div class="row error-message">
-    <?php 
-        foreach ($this->validationErrors as $err) {
-            echo $err['name'][0] . '<br/>';
-            echo $err['email'][0] . '<br/>';
-            echo $err['password'][0] . '<br/>';
-            echo $err['password_confirm'][0] . '<br/>';
+    <?php         
+        foreach ($this->validationErrors as $value) {
+            foreach ($value as $val) {
+                echo $val[0] . '<br>';
+            }
         }
     ?>
 </div>

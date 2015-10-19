@@ -20,7 +20,21 @@ class User extends AppModel {
 				'rule'    => array('alpha'),
 				'message' => 'Name can only be letters'
 			),
-        ),
+        ),		
+		'email' => array(
+			'required' => array(
+				'rule' => array('email', true),    
+				'message' => 'Please provide a valid email address.'    
+			),
+			 'unique' => array(
+				'rule'    => array('isUniqueEmail'),
+				'message' => 'This email is already in use',
+			),
+			'between' => array( 
+				'rule' => array('between', 6, 80), 
+				'message' => 'Email must be between 6 to 80 characters'
+			)
+		),
         'password' => array(
             'required' => array(
                 'rule' => array('notEmpty'),
@@ -40,21 +54,7 @@ class User extends AppModel {
 				'rule' => array('equaltofield','password'),
 				'message' => 'Passwords not match.'
 			)
-        ),		
-		'email' => array(
-			'required' => array(
-				'rule' => array('email', true),    
-				'message' => 'Please provide a valid email address.'    
-			),
-			 'unique' => array(
-				'rule'    => array('isUniqueEmail'),
-				'message' => 'This email is already in use',
-			),
-			'between' => array( 
-				'rule' => array('between', 6, 80), 
-				'message' => 'Email must be between 6 to 80 characters'
-			)
-		)
+        )
     );
 
 	function isUniqueEmail($check) {
@@ -71,11 +71,7 @@ class User extends AppModel {
 		);
 
 		if (!empty($email)) {
-			if ($this->data[$this->alias]['id'] == $email['User']['id']) {
-				return true; 
-			} else {
-				return false; 
-			}
+			return false;
 		} else {
 			return true; 
 		}
