@@ -32,7 +32,7 @@
 	<div class="col-lg-8">
 		<br>
         <div class="panel panel-default">
-            <div class="panel-heading">                
+            <div class="panel-heading">             	
                 Messages                
             </div>
             <!-- /.panel-heading -->
@@ -107,17 +107,16 @@
             <!-- .panel-body -->
         </div>
         <!-- /.panel -->
+        <?php if ($messages && $totalRows > 1) : ?>
+			<a href="#" id="show-more-link">Show More</a>
+		<?php  endif; ?>
     </div>
 </div>
+<input type="hidden" id="limit" value="1">
+<input type="hidden" id="range" value="1">
 
 <script>
 	$(document).ready(function(){
-
-		$('ul.show-more').hideMaxListItems({ 
-			'max':3, 
-			'speed':2000, 
-			'moreText':'Show More'
-		}); 
 
 		$(document).on('click', 'button.dels', function(){
 			if (confirm('Are you sure you want to delete this message?')) {	
@@ -174,6 +173,32 @@
 				);
 			}
 		}
+
+		$(document).on('click', 'a#show-more-link', function(){
+			var iLimit = $('#limit').val();
+			var iRange = $('#range').val();
+			$.post(
+					"<?php echo $this->request->webroot; ?>messages/showmoremessagedetails",
+					{
+						limit: iLimit, 
+						range: iRange,
+						id: "<?php echo $this->request->params['pass']['0']; ?>"
+					},
+					function(data){						
+						if(data != null) {
+							iLimit = parseInt(iLimit);
+							iRange = parseInt(iRange) + 1;
+							$('#limit').val(iLimit);							
+							$('#range').val(iRange);							
+                			$(data.htm).appendTo("div.panel-body");
+                			if(parseInt(data.totalRows) -1 == parseInt(data.range) ) {
+                				$('#show-more-link').hide();
+                			}
+						}
+					},
+					"json"
+				);
+		});
 
 	});
 

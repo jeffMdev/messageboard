@@ -1,2 +1,2 @@
-1444992358
-a:1:{s:4:"name";a:1:{s:32:"2f7076bc3980578d3e988a25828cf00a";s:17:"`messageboard_db`";}}
+1445220148
+a:2:{s:4:"name";a:4:{s:32:"2f7076bc3980578d3e988a25828cf00a";s:17:"`messageboard_db`";s:32:"47eb7bb09414c64f779510914712b6ee";s:7:"`count`";s:32:"5c61c133d4f9e272a58d4750bf3b584b";s:10:"`messages`";s:32:"e64c127b0220516ad6b32e5d59300464";s:9:"`Message`";}s:6:"fields";a:1:{s:32:"10c8af03a4614d4b8d50d23228bad1fd";a:1:{i:0;s:19:"COUNT(*) AS `count`";}}}

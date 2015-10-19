@@ -83,13 +83,11 @@
 				<?php else : ?>
 					You have no messages!
 				<?php endif; ?>
-				<div id="addshowmore"></div>
-				
             </div>
             <!-- .panel-body -->
         </div>
         <!-- /.panel -->
-        <?php if ($messages) : ?>
+        <?php if ($messages && $totalRows > 1) : ?>
 			<a href="#" id="show-more-link">Show More</a>
 		<?php  endif; ?>
     </div>
@@ -98,12 +96,6 @@
 <input type="hidden" id="range" value="1">
 <script>
 	$(document).ready(function(){
-
-		// $('ul.show-more').hideMaxListItems({ 
-		// 	'max':3, 
-		// 	'speed':2000, 
-		// 	'moreText':'Show More'
-		// }); 
 
 		$(document).on('click', 'button.dels', function(){
 			if (confirm('Are you sure you want to delete this message?')) {	
@@ -129,7 +121,9 @@
 							$('#limit').val(iLimit);							
 							$('#range').val(iRange);							
                 			$(data.htm).appendTo("div.panel-body");
-                			// alert(data.htm);
+                			if(parseInt(data.totalRows) -1 == parseInt(data.range) ) {
+                				$('#show-more-link').hide();
+                			}
 						}
 					},
 					"json"
