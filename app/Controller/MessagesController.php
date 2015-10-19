@@ -256,10 +256,7 @@ class MessagesController extends AppController {
 		                    	<li class="h4">' . $message['usr']['name'] . '</li>
 		                    	<li class="h6">' . $message['msg']['content'] . '</li>
 		                    	<li class="text-info h6">' . date('F d, Y g:i A', strtotime($message['msg']['created'])) . '</li>
-		                    	<li>
-		                    		<a href="' . $this->request->webroot . 'messages/messagedetail/' . $message['msg']['from_id'] . '" class="btn btn-warning">View Details</a>
-		                    		<button class="dels btn btn-danger" id="del' . $message['msg']['id'] . '">Delete Message</button>
-		                    	</li>
+		                    	<li><button class="dels btn btn-danger" id="del' . $message['msg']['id'] . '">Delete Message</button></li>
 		                    </ul>
 	                	</div>';
                 	else : 
@@ -275,10 +272,7 @@ class MessagesController extends AppController {
 		                    	<li class="h4">' . $message['usr']['name'] . '</li>
 		                    	<li class="h6">' . $message['msg']['content'] . '</li>
 		                    	<li class="text-info h6">' . date('F d, Y g:i A', strtotime($message['msg']['created'])) . '</li>
-		                    	<li>
-		                    		<a href="' . $this->request->webroot . 'messages/messagedetail/' . $message['msg']['to_id'] . '" class="btn btn-warning">View Details</a>
-		                    		<button class="dels btn btn-danger" id="del' . $message['msg']['id'] . '">Delete Message</button>
-		                    	</li>
+		                    	<li><button class="dels btn btn-danger" id="del' . $message['msg']['id'] . '">Delete Message</button></li>
 		                    </ul>
 	                	</div>';
 					endif;
