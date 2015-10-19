@@ -21074,3 +21074,703 @@ Stack Trace:
 #8 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #9 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2015-10-19 19:02:27 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/2.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:02:36 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/2.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:02:41 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/2.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:02:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:04:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:04:14 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/2.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:04:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'messageboard' in 'where clause'
+Request URL: /messageboard/messages/messagedetail/messageboard/app/webroot/img/profile_img/2.jpg
+Stack Trace:
+#0 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('select msg.*, u...', Array)
+#2 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('select msg.*, u...', Array, Array)
+#3 /var/www/messageboard/lib/Cake/Model/Datasource/DboSource.php(537): DboSource->fetchAll('select msg.*, u...')
+#4 [internal function]: DboSource->query('select msg.*, u...')
+#5 /var/www/messageboard/lib/Cake/Model/Model.php(3354): call_user_func_array(Array, Array)
+#6 /var/www/messageboard/app/Controller/MessagesController.php(63): Model->query('select msg.*, u...')
+#7 [internal function]: MessagesController->messageDetail('messageboard', 'app', 'webroot', 'img', 'profile_img', '2.jpg')
+#8 /var/www/messageboard/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/messageboard/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-19 19:04:51 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/2.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:04:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:07:00 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:07:12 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:07:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:07:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:07:33 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:07:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:07:38 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:07:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:07:56 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:08:59 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:08:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:09:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:09:02 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:10:07 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:10:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:10:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:10:44 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:11:12 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:11:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:11:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:11:54 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:13:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:13:34 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:14:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:14:03 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:16:33 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:16:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:16:44 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:16:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:17:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:18:18 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:18:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:18:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:19:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:19:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:19:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:20:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:20:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:20:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:20:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:21:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:22:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:25:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:25:29 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:25:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:25:42 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:25:52 Error: [MissingControllerException] Controller class MessageboardController could not be found.
+Exception Attributes: array (
+  'class' => 'MessageboardController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/messageboard/app/webroot/img/profile_img/1.jpg
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:25:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:26:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:28:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:28:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:28:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:30:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:30:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:30:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:30:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:30:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:31:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:31:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:31:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:31:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:32:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:32:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:32:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:32:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:32:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 19:32:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /messageboard/css/bootstrap-theme.css.map
+Stack Trace:
+#0 /var/www/messageboard/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

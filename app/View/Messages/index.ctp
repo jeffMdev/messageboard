@@ -87,13 +87,13 @@
             <!-- .panel-body -->
         </div>
         <!-- /.panel -->
-        <?php if ($messages && $totalRows > 1) : ?>
+        <?php if ($messages && $totalRows > 5) : ?>
 			<a href="#" id="show-more-link">Show More</a>
 		<?php  endif; ?>
     </div>
 </div>
-<input type="hidden" id="limit" value="1">
-<input type="hidden" id="range" value="1">
+<input type="hidden" id="limit" value="5">
+<input type="hidden" id="range" value="5">
 <script>
 	$(document).ready(function(){
 
@@ -117,11 +117,11 @@
 					function(data){						
 						if(data != null) {
 							iLimit = parseInt(iLimit);
-							iRange = parseInt(iRange) + 1;
+							iRange = parseInt(iRange) + 5;
 							$('#limit').val(iLimit);							
 							$('#range').val(iRange);							
                 			$(data.htm).appendTo("div.panel-body");
-                			if(parseInt(data.totalRows) -1 == parseInt(data.range) ) {
+                			if(parseInt(data.range) >= parseInt(data.totalRows) - 5) {
                 				$('#show-more-link').hide();
                 			}
 						}

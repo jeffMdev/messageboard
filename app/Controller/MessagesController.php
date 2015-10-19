@@ -21,7 +21,7 @@ class MessagesController extends AppController {
 				        WHEN msg.from_id = {$ses_id} THEN msg.to_id
 				        WHEN msg.to_id = {$ses_id} THEN msg.from_id
 				      END
-				    ) order by msg.created desc limit 1";
+				    ) order by msg.created desc limit 5";
 
 		$messages = $this->Message->query($sql);		
 
@@ -58,7 +58,7 @@ class MessagesController extends AppController {
 					join users as usr
 					on usr.id = msg.from_id
 					where msg.to_id in ({$ses_id},{$id}) AND msg.from_id in ({$ses_id},{$id})
-					order by msg.created desc limit 1";
+					order by msg.created desc limit 5";
 
 			$messages = $this->Message->query($sql);			
 
@@ -135,9 +135,9 @@ class MessagesController extends AppController {
 			if($messages) {
 				foreach ($messages as $message) {
 					if ($message['msg']['from_id'] != $this->Session->read('Auth.User.id')) : 
-						$imgSrc = '/app/webroot/img/pic_00.jpg';
+						$imgSrc = $this->request->webroot . 'app/webroot/img/pic_00.jpg';
 						if (!empty($message['usr']['image'])) {
-						$imgSrc = '/app/webroot/img/profile_img/' . $message['usr']['image'];
+						$imgSrc = $this->request->webroot . 'app/webroot/img/profile_img/' . $message['usr']['image'];
 						}
 						$data .= '<div class="ajax-massage alert alert-success alert-dismissable" id="' . $message['msg']['id'] . '">               
 		                    <ul class="list-unstyled">
@@ -244,9 +244,9 @@ class MessagesController extends AppController {
 			if($messages) {
 				foreach ($messages as $message) {
 					if ($message['msg']['from_id'] != $this->Session->read('Auth.User.id')) : 
-						$imgSrc = '/app/webroot/img/pic_00.jpg';
+						$imgSrc = $this->request->webroot . 'app/webroot/img/pic_00.jpg';
 						if (!empty($message['usr']['image'])) {
-						$imgSrc = $this->request->webroot . '/app/webroot/img/profile_img/' . $message['usr']['image'];
+						$imgSrc = $this->request->webroot . 'app/webroot/img/profile_img/' . $message['usr']['image'];
 						}
 						$data .= '<div class="ajax-massage alert alert-success alert-dismissable" id="' . $message['msg']['id'] . '">               
 		                    <ul class="list-unstyled">
@@ -266,7 +266,7 @@ class MessagesController extends AppController {
 						}
                 		$data .= '<div class="ajax-massage alert alert-info alert-dismissable" id="' . $message['msg']['id'] . '">               
 		                    <ul class="list-unstyled">
-		                    	<li class="navbar-left">
+		                    	<li class="navbar-right">
 			                    	<img src="' . $imgSrc . '" class="img-thumbnail" width="60" height="60" class="img-thumbnail" style="margin-right:10px;">
 		                    	</li>
 		                    	<li class="h4">' . $message['usr']['name'] . '</li>
