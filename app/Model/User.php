@@ -4,13 +4,11 @@ App::uses('AppModel', 'Model');
 
 class User extends AppModel {
 
-	public $uploadDir = 'uploads';
-
 	public $validate = array(
         'name' => array(
             'nonEmpty' => array(
                 'rule' => array('notEmpty'),
-                'message' => 'A name is required',
+                'message' => 'Name field is required',
 				'allowEmpty' => false
             ),
 			'between' => array( 
@@ -26,7 +24,7 @@ class User extends AppModel {
         'password' => array(
             'required' => array(
                 'rule' => array('notEmpty'),
-                'message' => 'A password is required'
+                'message' => 'Password field is required'
             ),
 			'min_length' => array(
 				'rule' => array('minLength', '3'),  
@@ -40,7 +38,7 @@ class User extends AppModel {
             ),
 			 'equaltofield' => array(
 				'rule' => array('equaltofield','password'),
-				'message' => 'Both passwords must match.'
+				'message' => 'Passwords not match.'
 			)
         ),		
 		'email' => array(
@@ -56,22 +54,7 @@ class User extends AppModel {
 				'rule' => array('between', 6, 80), 
 				'message' => 'Email must be between 6 to 80 characters'
 			)
-		),				
-		'password_update' => array(
-			'min_length' => array(
-				'rule' => array('minLength', '6'),   
-				'message' => 'Password must have a mimimum of 6 characters',
-				'allowEmpty' => true,
-				'required' => false
-			)
-        ),
-		'password_confirm_update' => array(
-			 'equaltofield' => array(
-				'rule' => array('equaltofield','password_update'),
-				'message' => 'Both passwords must match.',
-				'required' => false,
-			)
-        )
+		)
     );
 
 	function isUniqueEmail($check) {

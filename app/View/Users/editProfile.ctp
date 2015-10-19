@@ -1,4 +1,12 @@
-
+<?php if ($this->validationErrors['User']) : ?>
+<div class="row error-message">
+    <?php 
+        foreach ($this->validationErrors as $err) {
+            echo $err['name'][0] . '<br/>';
+        }
+    ?>
+</div>
+<?php endif; ?>
 <div class="row">
         <h1 class="page-header">Edit User Profile</h1>
 </div>
@@ -16,7 +24,7 @@
 	</div>
 	<div class="col-lg-4">
 		<ul class="list-unstyled">
-		 	<li><?php echo $this->Form->input('name', array('class' => 'form-control input-sm')); ?></li>
+		 	<li><?php echo $this->Form->input('name', array('class' => 'form-control input-sm', 'error' => false)); ?></li>
 			<li><p><?php echo $this->Form->input('birthdate', array('class' => 'form-control input-sm bdate', 'type' => 'text')); ?></p></li>
 			<li><?php 
 						$selected = isset($this->request->data['User']['gender']) ? $this->request->data['User']['gender'] : null ;

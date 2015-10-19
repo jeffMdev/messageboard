@@ -40,7 +40,10 @@ class MessagesController extends AppController {
 				$this->Session->setFlash('Message sent!');
 				$this->redirect(array('controller' => 'messages', 'action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('Sending failed, please try again!'));
+				$msg = '';
+				if ($this->request->data['Message']['to_id'] == '') $msg .= 'Recipient is required.';
+				if ($this->request->data['Message']['content'] == '') $msg .= 'Message content must not be empty.';
+				$this->Session->setFlash($msg, 'default', 'bad');
 			}
 		} 
 		$users = $this->User->find('all', array('conditions' => array('User.id !=' => $this->Session->read('Auth.User.id'))));

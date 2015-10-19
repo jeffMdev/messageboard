@@ -56,11 +56,35 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
 
     <style type="text/css">
-        #flashMessage{
+        .message{
             background: #C8E5BC;
             border-radius: 3px;
             font-size: 12px;
             color: #3C763D;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .b{
+            background: #FF6666;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #000000;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .g{
+            background: #99D6AD;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #660000;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .error-message{
+            background: #FF6666;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #660000;
             padding: 10px;
             margin-top: 10px;
         }

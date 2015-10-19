@@ -1,3 +1,4 @@
+<div class="row error-message"></div>
 <div class="row">
         <h1 class="page-header">New Message</h1>
 </div>
@@ -10,7 +11,7 @@
 		?>
 			<p>
 				<select class="js-example-templating js-states form-control" id="recipient" required>
-					<option></option>
+					<option value="0"></option>
 					<?php foreach($users as $user) : ?>
 						<option value="<?php echo $user['User']['id'] ?>"> <?php echo $user['User']['name']; ?> </option>
 					<?php endforeach; ?>
@@ -18,13 +19,13 @@
 			</p>
 		<?php 
 			echo $this->Form->label('content', 'Message <span class="mandatory">*</span>');				
-			echo $this->Form->input('content',array('label' => false, 'placeholder' => 'Message', 'class' => 'form-control input-sm'));
+			echo $this->Form->input('content',array('label' => false, 'placeholder' => 'Message', 'class' => 'form-control input-sm', 'id' => 'message'));
 		?>
 		
         <div class="btn-group">
             <div class="btn">
             <?php 
-            echo $this->Form->submit('Send', array('class' => 'form-submit btn btn-success')); 
+            echo $this->Form->submit('Send', array('class' => 'form-submit btn btn-success', 'id' => 'submit')); 
             ?>
             </div>
             <?php 
@@ -42,6 +43,7 @@
 <script type="text/javascript">
 	// $(".js-example-basic-multiple").select2();	
 $(document).ready(function(){
+	$('.error-message').hide();
 	function formatState (state) {
 	  if (!state.id) { return state.text; }
 	  var $state = $(
@@ -65,6 +67,23 @@ $(document).ready(function(){
 	$('#recipient').change(function(){
 		$('#MessageToId').val(this.value);
 	});
+
+	/**	Validation **/
+	$(document).on('click', '#submit', function(){
+		if ($('#MessageToId').val() == '' && $('#message').val() == '') {
+			$('.error-message').html('<p>Recipient is required.</p>');
+			$('.error-message').append('<p>Message content must not be empty.</p>');
+		} else if ($('#MessageToId').val() == '') {
+			$('.error-message').html('<p>Recipient is required.</p>');
+		} else if ($('#message').val() == '') {
+			$('.error-message').html('<p>Message content must not be empty.</p>');
+		}
+
+		if ($('#MessageToId').val() == '' || $('#message').val() == '') {
+			$('.error-message').show();
+		}
+	});
+
 });
 </script>
 

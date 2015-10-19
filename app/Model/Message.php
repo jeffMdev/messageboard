@@ -14,9 +14,13 @@ class Message extends AppModel {
             )
         ),
         'content' => array(
+            'required' => array(
+                'rule' => array('notEmpty'),
+                'message' => 'Message content must not be empty.'
+            ),
             'nonEmpty' => array(
                 'rule' => array('notEmpty'),
-                'message' => 'Message content is required.',
+                'message' => 'Message content must not be empty.',
 				'allowEmpty' => false
             )
         )

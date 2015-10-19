@@ -2,9 +2,6 @@
         <h1 class="page-header">Login</h1>
 </div>
 <div class="row">
-	<!-- <?php echo $this->Session->flash('auth'); ?> -->
-</div>
-<div class="row">
 	<div class="form-group">
 	<?php 
 		echo $this->Form->create('User');

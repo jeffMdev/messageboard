@@ -1,17 +1,28 @@
+<?php if ($this->validationErrors) : ?>
+<div class="row error-message">
+    <?php 
+        foreach ($this->validationErrors as $err) {
+            echo $err['name'][0] . '<br/>';
+            echo $err['email'][0] . '<br/>';
+            echo $err['password'][0] . '<br/>';
+            echo $err['password_confirm'][0] . '<br/>';
+        }
+    ?>
+</div>
+<?php endif; ?>
 <div class="row">
         <h1 class="page-header">Registration</h1>
 </div>
-
 <div class="row">
     <div class="form-group">
         <div class="users form">
 
         <?php   
             echo $this->Form->create('User');
-            echo $this->Form->input('name', array('class' => 'form-control input-sm'));
-    		echo $this->Form->input('email', array('class' => 'form-control input-sm'));
-            echo $this->Form->input('password', array('class' => 'form-control input-sm'));
-    		echo $this->Form->input('password_confirm', array('label' => 'Confirm Password *', 'maxLength' => 255, 'title' => 'Confirm password', 'type'=>'password', 'class' => 'form-control input-sm'));
+            echo $this->Form->input('name', array('class' => 'form-control input-sm', 'error' => false));
+    		echo $this->Form->input('email', array('class' => 'form-control input-sm', 'error' => false));
+            echo $this->Form->input('password', array('class' => 'form-control input-sm', 'error' => false));
+    		echo $this->Form->input('password_confirm', array('label' => 'Confirm Password *', 'maxLength' => 255, 'title' => 'Confirm password', 'type'=>'password', 'class' => 'form-control input-sm', 'error' => false));
         ?>
 
         <div class="btn-group">

@@ -14,25 +14,19 @@ class UsersController extends AppController {
         parent::beforeFilter();
         $this->Auth->allow('login','register', 'registerThankYou'); 
     }
-	
-    public function edit(){}
 
-	public function login() {
-		
-		//if already logged-in, redirect
+	public function login() {		
 		if($this->Session->check('Auth.User')){
 			$this->redirect(array('action' => 'index'));		
-		}
-		
-		// if we get the post information, try to authenticate
+		}		
 		if ($this->request->is('post')) {
 			if ($this->Auth->login()) {					
 				$user_id = $this->Auth->user('id');
 				$this->User->updateLastLoginTime($user_id, date('Y-m-d H:i:s'));
-				// $this->redirect($this->Auth->redirectUrl());
+				//$this->redirect($this->Auth->redirectUrl());
 				$this->redirect(array('controller' => 'messages', 'action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('Invalid email or password, please try again.'));
+				$this->Session->setFlash('Invalid email or password, please try again.', 'default', 'bad');
 			}
 		} 
 	}
@@ -42,23 +36,15 @@ class UsersController extends AppController {
 	}
 
     public function index() {
-		$this->paginate = array(
-			'limit' => 6,
-			'order' => array('User.email' => 'asc' )
-		);
-		$users = $this->paginate('User');
-		$this->set(compact('users'));
+		$this->redirect(array('controller' => 'messages', 'action' => 'index'));
     }
 
     public function register() {
-        if ($this->request->is('post')) {			
+        if ($this->request->is('post')) {	
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
-				// $this->Session->setFlash(__('You are now registered, please login now'));
 				$this->redirect(array('action' => 'registerthankyou'));
-			} else {
-				$this->Session->setFlash(__('Error: The user could not be created. Please, try again.'));
-			}	
+			} 
         }
     }
 
@@ -112,10 +98,9 @@ class UsersController extends AppController {
 	    	}
 	    	
 	        if ($this->User->save($this->request->data)) {	      		    	
-	            $this->Session->setFlash(__('Your profile has been updated.'));
+	            $this->Session->setFlash(__('Your profile has been updated.', 'default', null, 'good'));
 	            return $this->redirect(array('action' => 'profile', $id));
 	        }
-	        $this->Session->setFlash(__('Unable to update your profile.'));
 	    }
 
 	    if (!$this->request->data) {
