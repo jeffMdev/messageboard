@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 14, 2015 at 07:08 PM
+-- Generation Time: Oct 19, 2015 at 06:00 PM
 -- Server version: 5.1.73
 -- PHP Version: 5.3.3
 
@@ -33,8 +33,34 @@ CREATE TABLE IF NOT EXISTS `messages` (
   `content` text NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  PRIMARY KEY (`id`),
+  KEY `to_id` (`to_id`),
+  KEY `from_id` (`from_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
+
+--
+-- Dumping data for table `messages`
+--
+
+INSERT INTO `messages` (`id`, `to_id`, `from_id`, `content`, `created`, `modified`) VALUES
+(1, 4, 1, 'ss', '2015-10-19 12:08:44', '2015-10-19 12:08:44'),
+(2, 2, 1, 'sdf', '2015-10-19 14:38:57', '2015-10-19 14:38:57'),
+(3, 2, 1, 'sadf', '2015-10-19 15:18:21', '2015-10-19 15:18:21'),
+(4, 3, 1, 's', '2015-10-19 15:25:35', '2015-10-19 15:25:35'),
+(5, 2, 1, 'd', '2015-10-19 15:32:10', '2015-10-19 15:32:10'),
+(6, 2, 1, 's', '2015-10-19 15:38:24', '2015-10-19 15:38:24'),
+(7, 2, 1, 's', '2015-10-19 15:39:37', '2015-10-19 15:39:37'),
+(8, 2, 1, 'd', '2015-10-19 15:39:41', '2015-10-19 15:39:41'),
+(9, 2, 1, 'sdf', '2015-10-19 15:40:16', '2015-10-19 15:40:16'),
+(10, 2, 1, 'ssdfsdf', '2015-10-19 15:41:17', '2015-10-19 15:41:17'),
+(11, 2, 1, 'sdfgsdfg', '2015-10-19 15:41:42', '2015-10-19 15:41:42'),
+(12, 2, 1, 'dsfdf', '2015-10-19 15:42:58', '2015-10-19 15:42:58'),
+(13, 2, 1, 'sdf', '2015-10-19 15:49:14', '2015-10-19 15:49:14'),
+(14, 2, 1, 'fsadfasdfasf', '2015-10-19 15:49:17', '2015-10-19 15:49:17'),
+(15, 2, 1, '23423423', '2015-10-19 15:49:22', '2015-10-19 15:49:22'),
+(16, 3, 1, 'sdf', '2015-10-19 16:23:15', '2015-10-19 16:23:15'),
+(17, 3, 1, 'dsfgsd', '2015-10-19 17:53:41', '2015-10-19 17:53:41'),
+(18, 6, 1, 'rafael', '2015-10-19 17:54:06', '2015-10-19 17:54:06');
 
 -- --------------------------------------------------------
 
@@ -57,16 +83,22 @@ CREATE TABLE IF NOT EXISTS `users` (
   `created_ip` varchar(20) NOT NULL,
   `modified_ip` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `image`, `gender`, `birthdate`, `hubby`, `last_login_time`, `created`, `modified`, `created_ip`, `modified_ip`) VALUES
-(16, 'jeffrey', 'jepoy@email.com', '9b3fedba6e99b9cfe0e8def5befbe14b74a502e2', 'pic_02.jpg', '1', '1986-11-11', 'My hubby: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at molestie arcu. Morbi ut hendrerit augue. Praesent dui diam, feugiat in mi ac, gravida elementum arcu. Ut porta nisl vel neque tristique, non euismod dolor ultricies. Nullam eu urna eu dui dictum interdum. Pellentesque ut posuere orci. Sed dictum vitae odio id volutpat.\r\n\r\nInteger euismod libero a turpis commodo, finibus efficitur augue accumsan. Duis facilisis velit in blandit feugiat. Integer pellentesque sem sed dui venenatis condimentum. Morbi mattis arcu a turpis interdum, eget pharetra lectus placerat. Vivamus finibus eros quis nunc cursus dictum. Vivamus convallis tristique aliquam. Sed non tellus tristique ipsum tincidunt mollis id vel lorem. Duis efficitur mauris id nisi sodales lacinia. In ac dictum nunc. Duis faucibus turpis vel nibh tristique gravida. Ut pretium velit at semper eleifend. Maecenas a pulvinar tellus. Phasellus non dolor ipsum. Morbi in ante accumsan diam malesuada laoreet.', '2015-10-14 15:05:32', '2015-10-13 16:35:07', '2015-10-14 15:45:44', '', ''),
-(15, 'admin', 'admin@admin.com', '3c39cbacf40aeaa53c4a232a5eb8b73054bfe994', NULL, NULL, NULL, NULL, '2015-10-13 16:48:23', '2015-10-13 16:34:45', '2015-10-13 16:34:45', '', ''),
-(17, 'Jeffrey Merioles', 'jeffrey@email.com', 'ff935dbec485fb35469ded69f84cf35eb48715e6', '17.jpg', '1', '2005-10-10', 'My hubby', '2015-10-14 17:31:29', '2015-10-13 16:56:44', '2015-10-14 19:08:23', '', '');
+(1, 'Jepoy Merioles', 'jeffrey@email.com', 'ff935dbec485fb35469ded69f84cf35eb48715e6', '1.jpg', '1', '2015-10-04', 'I choose to learn more about web developments.\r\nI watch tutorials for cakePHP to enhance my knowledge and skills.', '2015-10-19 17:59:28', '2015-10-15 10:00:14', '2015-10-19 14:49:37', '', ''),
+(2, 'Lester Padul', 'lester@email.com', '4412d051e679401624c66e4199280ac53735034f', '2.jpg', '1', NULL, '', '2015-10-19 10:29:13', '2015-10-15 10:00:59', '2015-10-15 17:18:43', '', ''),
+(3, 'Yongbo Maniquez', 'yongbo@email.com', '8714fcc78e99b482d438dd10d752a2d4336ec2a3', '3.jpg', '1', NULL, '', '2015-10-16 14:51:07', '2015-10-15 12:56:21', '2015-10-15 17:18:00', '', ''),
+(4, 'Kimberly', 'kimberly@email.com', 'ba83031e0a92d8e3c603e6dea7759442b0f29f32', NULL, NULL, NULL, NULL, '0000-00-00 00:00:00', '2015-10-16 17:05:11', '2015-10-16 17:05:11', '', ''),
+(5, 'Richer', 'rich@email.com', '7d1435a7434e6ee9d872c0fbd0457d2f4f502f64', '5.jpg', '', NULL, '', '2015-10-19 17:59:09', '2015-10-16 17:06:12', '2015-10-19 17:59:21', '', ''),
+(6, 'Rafael', 'rafael@email.com', '862cd79207404f19209f20d7068e1e07801c5e95', NULL, NULL, NULL, NULL, '0000-00-00 00:00:00', '2015-10-16 17:06:32', '2015-10-16 17:06:32', '', ''),
+(7, 'Blezel', 'blezel@emai.com', '1636ffe3829af27df96e546c498e5e30bb5c1c0f', NULL, NULL, NULL, NULL, '0000-00-00 00:00:00', '2015-10-16 17:06:55', '2015-10-16 17:06:55', '', ''),
+(8, 'Kate Edoloverio', 'kate@email.com', '1546987f1aef23064f867b6c893378970f3f5cb5', NULL, NULL, NULL, NULL, '0000-00-00 00:00:00', '2015-10-16 17:07:20', '2015-10-16 17:07:20', '', ''),
+(9, 'Jessica', 'jessica@email.com', 'd47e7680a1b1adb4ba0ad299fcf89398142c42df', NULL, NULL, NULL, NULL, '2015-10-19 14:48:30', '2015-10-19 14:48:18', '2015-10-19 14:48:18', '', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
