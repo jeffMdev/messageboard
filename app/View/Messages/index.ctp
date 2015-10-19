@@ -21,21 +21,11 @@
 						<div class="ajax-massage alert alert-success alert-dismissable" id="<?php echo $message['msg']['id']; ?>">               
 		                    <ul class="list-unstyled">
 		                    	<li class="navbar-left"><?php 
-		                    		$imgSrc = '/app/webroot/img/pic_00.jpg';
+		                    		$imgSrc = $this->request->webroot . 'app/webroot/img/pic_00.jpg';
 									if (!empty($message['usr']['image'])) {
-										$imgSrc = '/app/webroot/img/profile_img/' . $message['usr']['image'];
-									}
-		                    		echo $this->Html->image(
-		                    			$imgSrc, 
-			                    		array(
-			                    			'id' => 'pic', 
-			                    			'name' => 'pic', 
-			                    			'width' => '60', 
-			                    			'height' => '60', 
-			                    			'class' => 'img-thumbnail',
-			                    			'style' => 'margin-right:10px;'
-			                    		)
-			                    	); ?>
+										$imgSrc = $this->request->webroot . 'app/webroot/img/profile_img/' . $message['usr']['image'];
+									} ?>
+			                    	<img src="<?php echo $imgSrc; ?>" class="img-thumbnail" style="margin-right:10px;" width="60" height="60" name="pic">
 		                    	</li>
 		                    	<li class="h4"><?php echo $message['usr']['name']; ?></li>
 		                    	<li class="h6"><?php echo $message['msg']['content']; ?></li>
@@ -52,20 +42,11 @@
 	                	<div class="ajax-massage alert alert-info alert-dismissable" id="<?php echo $message['msg']['id']; ?>">
 		                    <ul class="list-unstyled">
 		                    	<li class="navbar-right"><?php 
-		                    		$imgSrc = '/app/webroot/img/pic_00.jpg';
+		                    		$imgSrc = $this->request->webroot . 'app/webroot/img/pic_00.jpg';
 									if (!empty($message['usr']['image'])) {
-										$imgSrc = '/app/webroot/img/profile_img/' . $message['usr']['image'];
-									}
-		                    		echo $this->Html->image(
-		                    			$imgSrc, 
-			                    		array(
-			                    			'id' => 'pic', 
-			                    			'name' => 'pic', 
-			                    			'width' => '60', 
-			                    			'height' => '60', 
-			                    			'class' => 'img-thumbnail',
-			                    		)
-			                    	); ?>
+										$imgSrc = $this->request->webroot . 'app/webroot/img/profile_img/' . $message['usr']['image'];
+									} ?>
+			                    	<img src="<?php echo $imgSrc; ?>" class="img-thumbnail" style="margin-right:10px;" width="60" height="60" name="pic">
 		                    	</li>
 		                    	<li class="h4"><?php echo $message['usr']['name']; ?></li>
 		                    	<li class="h6"><?php echo $message['msg']['content']; ?></li>

@@ -121,7 +121,7 @@
 						var value_str = '<div class="ajax-massage alert alert-info alert-dismissable" id="' + data.last_msg_id + '">' +
 		                    '<ul class="list-unstyled">' +
 		                    	'<li class="navbar-right">' +
-									'<img src="' + img_src + '" class="img-thumbnail" width="60" height="60">' +
+									'<img src="' + img_src + '" class="img-thumbnail" width="60" height="60" style="margin-right:10px;">' +
 		                    	'</li>' +
 		                    	'<li class="h4">' + data.sender_name +' </li>' +
 		                    	'<li class="h6">' + data.message + '</li>' +

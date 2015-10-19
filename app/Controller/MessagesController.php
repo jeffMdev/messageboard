@@ -160,7 +160,7 @@ class MessagesController extends AppController {
 						}
                 		$data .= '<div class="ajax-massage alert alert-info alert-dismissable" id="' . $message['msg']['id'] . '">               
 		                    <ul class="list-unstyled">
-		                    	<li class="navbar-left">
+		                    	<li class="navbar-right">
 			                    	<img src="' . $imgSrc . '" class="img-thumbnail" width="60" height="60" class="img-thumbnail" style="margin-right:10px;">
 		                    	</li>
 		                    	<li class="h4">' . $message['usr']['name'] . '</li>
