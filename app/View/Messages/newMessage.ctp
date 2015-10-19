@@ -13,7 +13,7 @@
 		<?php 
 			echo $this->Form->create('Message');
 			echo $this->Form->label('name', 'Recipient <span class="mandatory">*</span>');				
-			echo $this->Form->input('to_id',array('label' => false, 'placeholder' => 'Search for a recipient', 'type' => 'text', 'class' => 'form-control input-sm hidden'));
+			echo $this->Form->input('to_id',array('label' => false, 'placeholder' => 'Search for a recipient', 'type' => 'text', 'class' => 'form-control input-sm'));
 		?>
 			<p>
 				<select class="js-example-templating form-control input-sm" id="recipient">
@@ -74,7 +74,8 @@ $(document).ready(function(){
 	$('span.select2-arrow').css("box-shadow","none");
 
 	$('#recipient').change(function(){
-		$('#MessageToId').val(this.value);
+		if(this.value != 0) $('#MessageToId').val(this.value);
+		else $('#MessageToId').val('');
 	});
 
 	/**	Validation **/
