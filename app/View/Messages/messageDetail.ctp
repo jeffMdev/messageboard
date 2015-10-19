@@ -183,6 +183,7 @@
 			var msg = $('#message').val();
 			if ($.trim(msg) == '') {
 				$('.error-message').text('Message content must not be empty.');
+				$('#message').val($.trim($('#message').val()));
 				$('.error-message').show();
 				return false;
 			} else {
