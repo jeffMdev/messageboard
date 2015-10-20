@@ -80,6 +80,7 @@ $(document).ready(function(){
 
 	/**	Validation **/
 	$(document).on('click', '#submit', function(){
+		$('#message').val($.trim($('#message').val()));
 		if ($('#MessageToId').val() == '' && $('#message').val() == '') {
 			$('.error-message').html('<p>Recipient is required.</p>');
 			$('.error-message').append('<p>Message content must not be empty.</p>');
