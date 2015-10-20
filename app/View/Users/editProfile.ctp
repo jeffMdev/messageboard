@@ -40,7 +40,7 @@
 				<div class="btn-group">
 		            <div class="btn">
 		            <?php 
-		            echo $this->Form->submit('Update', array('class' => 'form-submit btn btn-success')); 
+		            echo $this->Form->submit('Update', array('class' => 'form-submit btn btn-success', 'id' => 'btn-submit')); 
 		            ?>
 		            </div>
 		            <?php 
@@ -59,6 +59,12 @@
 
 <script>
 	$(document).ready(function(){
+
+		$(document).on('click', '#btn-submit', function(){
+			$('#UserHubby').val($.trim($('#UserHubby').val()));
+			$('#UserName').val($.trim($('#UserName').val()));
+		});
+
 		$( "#UserBirthdate" ).datepicker({
 			buttonText: "Select date",
 			dateFormat: "yy-mm-dd",

@@ -17,8 +17,8 @@ class User extends AppModel {
 				'message' => 'Name must be between 5 to 20 characters'
 			),
 			'alpha' => array(
-				'rule'    => array('alpha'),
-				'message' => 'Name can only be letters'
+				'rule'    => '/^[a-z - A-Z \-]{5,20}$/i',
+				'message' => 'Name field should contain letters, space, and dash only.'
 			),
         ),		
 		'email' => array(

@@ -98,6 +98,7 @@ class UsersController extends AppController {
 	    	}
 	    	
 	        if ($this->User->save($this->request->data)) {	      		    	
+	        	$this->Session->write('Auth.User.Name', $this->request->data['User']['name']);
 	            $this->Session->setFlash(__('Your profile has been updated.', 'default', null, 'good'));
 	            return $this->redirect(array('action' => 'profile', $id));
 	        }
