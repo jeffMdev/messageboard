@@ -39,12 +39,14 @@
 			<li>Last Login : <?php echo date('F d, Y ga', strtotime($user['User']['last_login_time'])); ?></li>	
 	 	</ul>
 	</div> 
+	<?php if(trim($user['User']['hubby']) != '') : ?>
 	<div class="col-lg-8">
 		<div>Hubby : </div>
 		<div>
 			<pre class="pre-unstyled"><?php echo $user['User']['hubby']; ?></pre>
 		</div>
 	</div>
+	<?php endif; ?>
 </div>
 <div class="row">
 	<?php echo $this->Html->link('Back to Homage', array('controller' => 'messages', 'action' => 'index'), array('class' => 'btn btn-warning')); ?>
